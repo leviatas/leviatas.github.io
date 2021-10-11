@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+	--header-text-color: #eeeeee;
+	--header-container-color: #222831;
+	--header-element-color: #393e46;
+	--header-title-color: #00adb5;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poiret One', cursive;
+	color: var(--header-text-color);
+	background-color: var(--header-container-color);
+}
+h1 {
+	margin: 1.5rem 1.8rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--header-text-color);
+}
+
+nav {
+	background-color: var(--header-container-color);
+}
+
+ul {
+	list-style: none;
+}
+li {
+	padding: 0.2rem;
+	letter-spacing: 0.5px;
+}
+
+.container {
+	border-radius: 10px;
+	background-color: var(--header-element-color);
+	text-align: left;
+	border: 1px solid var(--header-text-color);
+	margin: 30px;
+	width: 20%;
+	padding: 1.3rem;
+	transition: 0.3s;
+}
+
+.container h1 {
+	padding: 40px;
+	font-size: 40px;
+	height: 50%;
+	letter-spacing: 2px;
+	color: var(--header-text-color);
+	transition: 0.3s;
+}
+
+.container h4 {
+	padding: 25px 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: var(--header-text-color);
+	transition: 0.3s;
+}
+
+.container:hover {
+	transition: 0.3s;
+	background-color: var(--header-element-color);
+	border: 1px solid var(--header-title-color);
+}
+
+.container h4:hover {
+	transition: 0.3s;
+	color: var(--header-title-color);
+}
+
+.container h1:hover {
+	color: var(--header-title-color);
+	transition: 0.3s;
+}
+
+.ul-flex {
+	display: flex;
+}
+
+.ul-flex li {
+	padding: 10px 30px;
+	margin: 35px auto;
+	font-size: 20px;
+}
+
+.container-flex {
+	color: var(--header-title-color);
+	justify-content: space-around;
+	display: flex;
+	transition: 0.3s;
+}
+
+.container-flex:hover {
+	transition: 0.3s;
+	color: white;
+}
+
+#logo {
+	display: inline;
+	padding: 25px 50px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: var(--header-title-color);
+}
+
+.navbar-flex {
+	color: var(--header-title-color);
+	justify-content: space-around;
+	display: flex;
+	transition: 0.3s;
+}
+
+.navbar-flex:hover {
+	transition: 0.3s;
+	color: white;
+}

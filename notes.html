@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/index-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		/>
+		<title>Notes</title>
+	</head>
+
+	<body class="bgc-petrol">
+		<script src="scripts/header.js"></script>
+		<main class="main-container bgc-petrol">
+			<h1 class="text-centered">Web Dev Notes</h1>
+			<section class="container-flex-notes">
+				<article class="container-notes">
+					<h2>Responsive Design - units</h2>
+
+					<p>Use em, rem and % to reach a responsive design.</p>
+					<p>
+						Not to use px in our designs leads to better UX and accesibipty.
+					</p>
+					<p>Abandon px units for font-size.</p>
+					<p>1 rem = 16px(default value)</p>
+					<p>Font-size > rem</p>
+					<p>Element size > em</p>
+					<p>Formula pixels to em/rem = px/16</p>
+					<p>Use % to define flexible widths. Ex: images.</p>
+
+					<p>
+						<small
+							><cite
+								><a
+									href="https://codepen.io/abalozz/pen/rpoDI/"
+									target="_blank"
+									rel="noopener noreferrer"
+									>Example - https://codepen.io/abalozz/pen/rpoDI/</a
+								></cite
+							></small
+						>
+					</p>
+					<p>
+						<small
+							><cite
+								><a
+									href="https://abalozz.es/sobre-como-usar-px-em-rem-y-percent-en-responsive-design/"
+									target="_blank"
+									rel="noopener noreferrer"
+									>https://abalozz.es/sobre-como-usar-px-em-rem-y-percent-en-responsive-design/</a
+								></cite
+							></small
+						>
+					</p>
+				</article>
+				<article class="container-notes">
+					<h2>Valores y Unidades CSS</h2>
+					<p>< valores > son los tipos de datos que admiten las propiedades</p>
+					<p>longitudes absolutas ej: cm, mm, px</p>
+					<p>
+						longitudes relativas ej: em, rem, vh, vw (funcionan en relacion a
+						otras medidas)
+					</p>
+					<p>em = tamaño de letra del elemento padre</p>
+					<p>rem = tamaño de letra del elemento raíz</p>
+					<p>
+						Valor hexadecimal = # seguido de 6 cifras hexadecimales
+						(0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f)
+					</p>
+					<p>Cada par de valor hexadecimal representa un canal RGB.</p>
+					<p>el width de un elemento depende del width de su elemento padre</p>
+					<p>se puede agregar contenido desde CSS</p>
+					<p>funcion calc() para calculos de aritmetica</p>
+					<p>
+						<small
+							><cite
+								><a
+									href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units"
+									target="_blank"
+									rel="noopener noreferrer"
+									>https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units</a
+								></cite
+							></small
+						>
+					</p>
+					<p>
+						<small
+							><cite
+								><a
+									href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units"
+									target="_blank"
+									rel="noopener noreferrer"
+									>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units</a
+								></cite
+							></small
+						>
+					</p>
+				</article>
+				<article class="container-notes">
+					<h2>Position - CSS</h2>
+					<p>
+						HTML elements are position static by default and not affected by
+						left, right, bottom, top properties.
+					</p>
+					<p>
+						position: static; positioned according to the normal flow of the
+						page.
+					</p>
+					<p>
+						position: relative; is positioned relative to its normal position.
+						Other content will not be adjusted to fit into any gap left by the
+						element.
+					</p>
+					<p>
+						position: fixed; is positioned relative to the viewport, which means
+						it always stays in the same place even if the page is scrolled.
+					</p>
+					<p>
+						position: absolute; is positioned relative to the nearest positioned
+						ancestor (instead of positioned relative to the viewport, like
+						fixed). However; if an absolute positioned element has no positioned
+						ancestors, it uses the document body, and moves along with page
+						scrolling.
+					</p>
+					<p>
+						position: sticky; is positioned based on the user's scroll position.
+						It is positioned relative until a given offset position is met in
+						the viewport - then it "sticks" in place
+					</p>
+					<p>
+						<small
+							><cite
+								><a
+									href="https://www.w3schools.com/css/css_positioning.asp"
+									target="_blank"
+									rel="noopener noreferrer"
+									>https://www.w3schools.com/css/css_positioning.asp</a
+								></cite
+							></small
+						>
+					</p>
+				</article>
+			</section>
+		</main>
+		<script src="scripts/footer.js"></script>
+	</body>
+</html>

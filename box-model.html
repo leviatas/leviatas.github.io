@@ -4,119 +4,110 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/box-model-style.css" />
-
+		<link rel="stylesheet" href="styles/index-style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		/>
 		<title>Box-Model</title>
 	</head>
 
-	<body>
-		<header class="text-centered">
-			<nav>
-				<div class="container-flex">
-					<a id="logo" href="index.html"><h1>Octavio Frangipani</h1></a>
-					<ul class="ul-flex">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="cv.html">CV</a></li>
-						<li><a href="box-model.html">Box-Model</a></li>
-					</ul>
-				</div>
-			</nav>
-			<h1 class="supertitle">Box model</h1>
-			<small>Practicing the Box-Model with CSS3</small>
-		</header>
-		<main>
+	<body class="bgc-sky">
+		<script src="scripts/header.js"></script>
+		<main class="main-container">
+			<h1 class="supertitle text-centered">The Box Model</h1>
 			<div class="text-centered">
 				<section>
 					<div class="container1">
-						<div class="box1">
+						<div class="box">
 							<h1>h1</h1>
-							<div class="box1">
-								<p class="max-width160">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Praesentium minus nulla sunt veniam, natus amet quasi ipsa et
-									cumque illum?
-								</p>
-							</div>
+
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Praesentium minus nulla sunt veniam, natus amet quasi ipsa et
+								cumque illum?
+							</p>
 						</div>
-						<div class="box2">
+						<div class="box">
 							<h1>h1</h1>
-							<div class="box2">
-								<p class="max-width160">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Assumenda aperiam quasi obcaecati corrupti ut omnis sunt minus
-									iusto accusamus enim.
-								</p>
-							</div>
+
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Assumenda aperiam quasi obcaecati corrupti ut omnis sunt minus
+								iusto accusamus enim.
+							</p>
 						</div>
 
-						<div class="box3">
+						<div class="box">
 							<h1>h1</h1>
-							<div class="box3">
-								<p class="max-width160">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Consequuntur voluptatibus nemo nam corrupti vero ab laboriosam
-									sit fuga tenetur debitis.
-								</p>
-							</div>
+
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Consequuntur voluptatibus nemo nam corrupti vero ab laboriosam
+								sit fuga tenetur debitis.
+							</p>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<div class="container1">
-						<img
-							class="background-img"
-							src="images/fondo.jpg"
-							alt="background"
-						/>
-						<img
-							class="background-img"
-							src="images/fondo.jpg"
-							alt="background"
-						/>
-						<img
-							class="background-img"
-							src="images/fondo.jpg"
-							alt="background"
-						/>
-						<img
-							class="background-img"
-							src="images/fondo.jpg"
-							alt="background"
-						/>
-						<img
-							class="background-img"
-							src="images/fondo.jpg"
-							alt="background"
-						/>
+					<div class="container2">
+						<h2 class="supertitle2">IMAGES</h2>
+						<div class="container1">
+							<img
+								class="background-img"
+								src="images/fondo.jpg"
+								alt="background"
+							/>
+							<img
+								class="background-img"
+								src="images/fondo.jpg"
+								alt="background"
+							/>
+							<img
+								class="background-img"
+								src="images/fondo.jpg"
+								alt="background"
+							/>
+							<img
+								class="background-img"
+								src="images/fondo.jpg"
+								alt="background"
+							/>
+							<img
+								class="background-img"
+								src="images/fondo.jpg"
+								alt="background"
+							/>
+						</div>
 					</div>
 				</section>
 
 				<section>
 					<div>
-						<table>
+						<table class="table-box-model">
 							<caption>
 								<h2 class="supertitle2">TABLE</h2>
 							</caption>
 							<tr>
-								<th scope="col">first name</th>
-								<th scope="col">last name</th>
-								<th scope="col">age</th>
+								<th class="th-pad th-fsize" scope="col">first name</th>
+								<th class="th-pad th-fsize" scope="col">last name</th>
+								<th class="th-pad th-fsize" scope="col">age</th>
 							</tr>
 							<tr>
-								<td>Octavio</td>
-								<td>Frangipani</td>
-								<td>31</td>
+								<td class="td-pad">Octavio</td>
+								<td class="td-pad">Frangipani</td>
+								<td class="td-pad">31</td>
 							</tr>
 							<tr>
-								<td>Octavio</td>
-								<td>Frangipani</td>
-								<td>31</td>
+								<td class="td-pad">Octavio</td>
+								<td class="td-pad">Frangipani</td>
+								<td class="td-pad">31</td>
 							</tr>
 							<tr>
-								<td>Octavio</td>
-								<td>Frangipani</td>
-								<td>31</td>
+								<td class="td-pad">Octavio</td>
+								<td class="td-pad">Frangipani</td>
+								<td class="td-pad">31</td>
 							</tr>
 						</table>
 					</div>
@@ -126,11 +117,11 @@
 					<div class="container2">
 						<h1 class="supertitle2">BUTTONS</h1>
 						<div class="container1">
-							<button type="button">button</button>
-							<button type="button">button</button>
-							<button type="button">button</button>
-							<button type="button">button</button>
-							<button type="button">button</button>
+							<button class="button-box-model" type="button">button</button>
+							<button class="button-box-model" type="button">button</button>
+							<button class="button-box-model" type="button">button</button>
+							<button class="button-box-model" type="button">button</button>
+							<button class="button-box-model" type="button">button</button>
 						</div>
 					</div>
 				</section>
@@ -182,5 +173,6 @@
 				</section>
 			</div>
 		</main>
+		<script src="scripts/footer.js"></script>
 	</body>
 </html>

@@ -19,7 +19,7 @@
 	border: 1px solid var(--border-color);
 }
 
-body {
+.main-container {
 	font-family: 'Maven Pro', sans-serif;
 	color: var(--text-color);
 	background-color: var(--body-color);
@@ -32,21 +32,24 @@ small {
 	padding: 20px;
 }
 
-table {
+.table-box-model {
 	margin: 30px auto;
 	padding: 100px;
 }
 
-th {
+/* .th-pad {
 	padding: 20px 100px;
+}
+
+.th-fsize {
 	font-size: 1.5em;
 }
 
-td {
+.td-pad {
 	padding: 50px;
-}
+} */
 
-button {
+/* .button-box-model {
 	margin: 0 auto;
 	padding: 30px 65px;
 	color: var(--text-color);
@@ -57,14 +60,14 @@ button {
 	letter-spacing: 1px;
 }
 
-button:hover {
+.button-box-model:hover {
 	background-color: var(--body-color);
 	color: var(--border-color);
 	border-radius: 0;
 	transition: 0.3s;
-}
+} */
 
-.container1 {
+/* .container1 {
 	display: flex;
 	padding: 50px;
 	margin: 20px 0;
@@ -75,9 +78,9 @@ button:hover {
 	padding: 100px;
 	margin: 40px 0;
 	background-color: var(--container-color);
-}
+} */
 
-.box1 {
+/* .box1 {
 	margin: 0 auto;
 	padding: 50px;
 	background-color: var(--box-color);
@@ -93,12 +96,12 @@ button:hover {
 	margin: 0 auto;
 	padding: 50px;
 	background-color: var(--box-color);
-}
+} */
 
-.text-centered {
+/* .text-centered {
 	text-align: center;
-}
-
+} */
+/* 
 .background-img {
 	width: 300px;
 	margin: 0 auto;
@@ -126,9 +129,9 @@ button:hover {
 
 .mar1 {
 	margin: 10px;
-}
+} */
 
-.container-flex {
+/* .container-flex {
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--header-container-color);
@@ -136,20 +139,20 @@ button:hover {
 	color: var(--header-title-color);
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 1px;
-}
+} */
 
-.container-flex a {
+/* .container-flex a {
 	text-decoration: none;
 	color: var(--header-text-color);
 }
 
 .container-flex a h1 {
 	color: var(--header-title-color);
-	font-size: 60px;
-	padding: 20px 40px;
-}
+	font-size: 40px;
+	padding: 35px 40px;
+} */
 
-.ul-flex {
+/* .ul-flex {
 	display: flex;
 	list-style: none;
 }
@@ -159,48 +162,32 @@ button:hover {
 	margin: 35px auto;
 	font-size: 20px;
 	color: var(--header-text-color);
+} */
+
+/* .navbar-flex {
+	color: var(--header-title-color);
+	background-color: var(--header-container-color);
+	justify-content: space-around;
+	display: flex;
+	transition: 0.3s;
+	font-family: 'Poiret One', cursive;
 }
 
-#h1 {
-	transition: 0.3s;
-}
-#h2 {
-	transition: 0.3s;
-}
-#h3 {
-	transition: 0.3s;
-}
-#h4 {
-	transition: 0.3s;
-}
-#h5 {
-	transition: 0.3s;
-}
-#h6 {
-	transition: 0.3s;
+.navbar-flex a {
+	text-decoration: none;
+	color: var(--header-text-color);
 }
 
-#h1:hover {
-	transition: 0.3s;
-	background-color: var(--box-color);
+.navbar-flex a h1 {
+	text-decoration: none;
+	color: var(--header-title-color);
+	font-size: 2.5rem;
+	padding: 0.8em;
 }
-#h2:hover {
-	background-color: var(--box-color);
+
+.navbar-flex:hover {
 	transition: 0.3s;
+	color: white;
 }
-#h3:hover {
-	background-color: var(--box-color);
-	transition: 0.3s;
-}
-#h4:hover {
-	background-color: var(--box-color);
-	transition: 0.3s;
-}
-#h5:hover {
-	background-color: var(--box-color);
-	transition: 0.3s;
-}
-#h6:hover {
-	background-color: var(--box-color);
-	transition: 0.3s;
-}
+
+ */

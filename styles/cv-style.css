@@ -7,87 +7,53 @@
 	--header-title-color: #00adb5;
 }
 
-html {
-	margin: 0 30px;
-	padding: 0;
-}
-body {
-	margin: 0;
-	width: 60%;
-	margin: 0 auto;
+.main-container-cv {
 	font-family: 'Montserrat', sans-serif;
 	color: dimgray;
+	width: 60%;
+	margin: 0 auto;
 }
-p {
+
+.p-cv {
 	font-size: 14px;
 	padding: 0;
 }
 
-h4 {
+.h4-cv {
 	margin-left: 8px;
-	font-size: 18px;
+	font-size: 1.1rem;
 }
 
-h5 {
-	font-size: 16px;
+.h5-cv {
+	font-size: 1rem;
 }
 
-a {
+.a-cv {
 	text-decoration: none;
 	color: blueviolet;
 }
-spam {
+.spam-cv {
 	color: blueviolet;
 }
-ul {
-	list-style-type: none;
-}
-li {
+.li-cv {
 	margin: 0 6px;
 }
-
-article {
+/* 
+.article-cv {
 	background-color: #f7f7f7;
 	padding: 10px;
 	margin: 15px 0;
 	border-radius: 10px;
 }
 
-header {
-	background-color: var(--header-container-color);
-	color: #fff;
-	text-align: center;
-	padding: 10px 15px;
-}
-
-footer {
+.footer-cv {
 	text-align: center;
 	padding: 15px;
 }
 
-#logo {
-	display: inline;
-	padding: 15px 40px;
-	font-size: 20px;
-	letter-spacing: 2px;
-	font-family: 'Poiret One', cursive;
-
-	color: var(--header-title-color);
-}
-
-header p {
-	font-family: 'Poiret One', cursive;
-	font-size: 17px;
-}
-
-#foto-perfil {
+.foto-perfil-cv {
 	border-radius: 10px;
 	width: 160px;
-}
-
-#html5 {
-	width: 30px;
-	margin: 0 5px;
 }
 
 .division {
@@ -99,8 +65,8 @@ header p {
 	justify-content: center;
 }
 
-.nav-bar {
+.nav-bar-cv {
 	display: flex;
 	font-size: 12px;
 	justify-content: center;
-}
+} */

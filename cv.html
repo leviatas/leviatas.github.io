@@ -13,22 +13,20 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="styles/cv-style.css" />
+		<link rel="stylesheet" href="styles/index-style.css" />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Curriculum Vitae de Octavio Frangipani" />
 		<title>Octavio Frangipani CV</title>
 	</head>
-	<body>
-		<header id="header">
-			<a id="logo" href="index.html"><h1>Octavio Patricio Frangipani</h1></a>
-			<p>Curriculum Vitae</p>
-		</header>
-		<main>
-			<div class="info-flex">
+	<body class="bgc-petrol">
+		<script src="scripts/header.js"></script>
+
+		<main class="main-container-cv">
+			<section class="info-flex">
 				<figure>
 					<img
-						id="foto-perfil"
+						class="foto-perfil-cv"
 						src="images/octavio-frangipani.jpg"
 						alt="foto perfil"
 					/>
@@ -40,9 +38,9 @@
 				<!-- mail  -->
 				<!-- phone num  -->
 				<!-- about me  -->
-				<section id="info">
-					<article>
-						<h4>Junior Full Stack Web Developer</h4>
+				<section>
+					<article class="info-cv">
+						<h2 class="pady1">Junior Full Stack Web Developer</h2>
 						<h1>
 							<em class="fa-brands fa-html5"></em>
 							<em class="fa-brands fa-css3-alt"></em>
@@ -66,10 +64,10 @@
 						</p>
 					</article>
 				</section>
-			</div>
+			</section>
 
 			<nav>
-				<ul class="nav-bar">
+				<ul class="nav-bar-cv">
 					<li><a href="#personal-data">Personal Data</a></li>
 					<li><a href="#working-experience">Working Experience</a></li>
 					<li><a href="#education">Education</a></li>
@@ -90,64 +88,121 @@
 			<!-- date of birth   -->
 			<!-- education level   -->
 			<!-- type of industry   -->
-			<section id="personal-data">
-				<h4>
-					Personal Data
-					<a href="#header"
-						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
-					></a>
-				</h4>
-				<article>
-					<p><strong>Currently working?</strong> No</p>
-					<p><strong>Working Permission:</strong> EU</p>
-					<p><strong>Willing to relocate?:</strong> Yes</p>
-					<p><strong>Date of Birth:</strong> 23/05/1990</p>
-					<p><strong>Education Level:</strong> Bachelor</p>
-					<p><strong>Industry:</strong> Information Technology</p>
-				</article>
-			</section>
+			<div class="flex">
+				<section id="personal-data" class="width30">
+					<h4 class="mary1">
+						Personal Data
+						<a href="#header"
+							><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
+						></a>
+					</h4>
+					<article class="info-cv">
+						<p><strong>Currently working?</strong> No</p>
+						<p><strong>Working Permission:</strong> EU</p>
+						<p><strong>Willing to relocate?:</strong> Yes</p>
+						<p><strong>Date of Birth:</strong> 23/05/1990</p>
+						<p><strong>Education Level:</strong> Bachelor</p>
+						<p><strong>Industry:</strong> Information Technology</p>
+					</article>
+				</section>
 
-			<!-- section   -->
-			<!-- h4 working experience   -->
-			<!-- article   -->
-			<!-- h5 title   -->
-			<!-- Company   -->
-			<!-- city of work   -->
-			<!-- duration   -->
-			<!-- description   -->
+				<!-- section   -->
+				<!-- h4 working experience   -->
+				<!-- article   -->
+				<!-- h5 title   -->
+				<!-- Company   -->
+				<!-- city of work   -->
+				<!-- duration   -->
+				<!-- description   -->
+
+				<!-- section   -->
+				<!-- h4 Languages   -->
+				<!-- article   -->
+				<!-- Language   -->
+				<!-- Level   -->
+
+				<section id="languages" class="width30">
+					<h4 class="mary1">
+						Languages
+						<a href="#header"
+							><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
+						></a>
+					</h4>
+					<article class="info-cv">
+						<p><strong>Spanish:</strong> Native</p>
+						<p><strong>English:</strong> Advance</p>
+					</article>
+				</section>
+
+				<!-- section   -->
+				<!-- h4 social media   -->
+				<!-- article   -->
+				<!-- title   -->
+				<!-- link   -->
+
+				<section id="social-media" class="width30">
+					<h4 class="mary1">
+						Social Media
+						<a href="#header"
+							><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
+						></a>
+					</h4>
+					<article class="info-cv">
+						<p>
+							<a
+								href="https://www.linkedin.com/in/octavio-frangipani-080aa947/"
+								target="_blank"
+								><em class="fab fa-linkedin"></em> -
+								https://www.linkedin.com/in/octavio-frangipani-080aa947/</a
+							>
+						</p>
+						<p>
+							<a
+								href="https://github.com/octapf?tab=repositories"
+								target="_blank"
+								><em class="fab fa-github-square"></em> -
+								https://github.com/octapf?tab=repositories</a
+							>
+						</p>
+					</article>
+				</section>
+			</div>
+
 			<div class="division"></div>
 
 			<section id="working-experience">
-				<h4>
+				<h4 class="mary1">
 					Working Experience
 					<a href="#header"
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<article>
-					<h5>
-						Content Manager at
-						<a href="http://www.sodimac.com/" target="_blank">Sodimac</a>
-					</h5>
-					<p>Buenos Aires, Argentina</p>
-					<p>January 2015 - May 2019</p>
-					<p>
-						Audiovisual content production/maintenance for multinational latin
-						retail company. Photography and video productions for
-						internal/external communication. In charge of 27 products
-						categories, 45.000 products, 2 teams, total of 12 people.
-					</p>
-				</article>
-				<article>
-					<h5>
-						Photographer at
-						<a href="http://www.sodimac.com/" target="_blank">Sodimac</a>
-					</h5>
+				<div class="flex">
+					<article class="article-cv">
+						<h5>
+							Content Manager at
+							<a href="http://www.sodimac.com/" target="_blank">Sodimac</a>
+						</h5>
+						<p>Buenos Aires, Argentina</p>
+						<p>January 2015 - May 2019</p>
+						<p>
+							Audiovisual content production/maintenance for multinational latin
+							retail company. Photography and video productions for
+							internal/external communication. In charge of 27 products
+							categories, 45.000 products, 2 teams, total of 12 people.
+						</p>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Photographer at
+							<a href="http://www.sodimac.com/" target="_blank">Sodimac</a>
+						</h5>
 
-					<p>Buenos Aires, Argentina</p>
-					<p>November 2013 - January 2015</p>
-					<p>Photograph/edit/manage product's photos.</p>
-				</article>
+						<p>Buenos Aires, Argentina</p>
+						<p>November 2013 - January 2015</p>
+						<p>Photograph/edit/manage product's photos.</p>
+					</article>
+				</div>
 			</section>
 			<div class="division"></div>
 
@@ -159,150 +214,185 @@
 			<!-- city   -->
 			<!-- duration   -->
 			<section id="education">
-				<h4>
+				<h4 class="mary1">
 					Education
 					<a href="#header"
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<article>
-					<h5>
-						Frontend Bootcamp (React/Redux/TypeScript/UnitTesting) at
-						<a
-							href="https://www.barcelonactiva.cat/es/itacademy#mesinfo"
-							target="_blank"
-							>Barcelona Activa - IT Academy</a
+				<div class="flex">
+					<article class="article-cv">
+						<h5>
+							Frontend Bootcamp ( React / Redux / TypeScript / UnitTesting ) at
+							<a
+								href="https://www.barcelonactiva.cat/es/itacademy#mesinfo"
+								target="_blank"
+								>Barcelona Activa - IT Academy</a
+							>
+						</h5>
+						<p>Remote</p>
+						<p>September 2021 to present.</p>
+						<small
+							><a
+								href="https://cibernarium.barcelonactiva.cat/it-academy/inscripcio;jsessionid=75DD3AEA4E31B065F1E2C1A936EC750A?p_p_id=activitiesbycode_WAR_cibernariumportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_activitiesbycode_WAR_cibernariumportlet_id=838003"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Details</a
+							></small
 						>
-					</h5>
-					<p>Remote</p>
-					<p>September 2021 to present.</p>
-					<small
-						>HTML5 · CSS3 · FlexBox · Bootstrap · SASS · Javascript · TypeScript
-						· DevTools · React · Testing · Redux · SoftSkills · Interviews
-						simulations · Team office project simulation</small
-					>
-				</article>
-				<article>
-					<h5>
-						REDUX & MERN eCommerce at
-						<a href="https://udemy.com/" target="_blank">Udemy</a>
-					</h5>
-					<p>Remote</p>
-					<p>March 2021 - August 2021</p>
-					<small
-						>React with Functional Components & Hooks React router
-						React-Bootstrap UI library How to structure components Component
-						level state & props Managing global state with Redux (Actions &
-						Reducers) Using Redux state in components (useDispatch &
-						useSelector) Creating an extensive back end with Express Working
-						with a MongoDB database and the Mongoose ODM JWT authentication
-						(JSON web tokens) Creating custom authentication middleware Custom
-						error handler Integrating the PayPal API Environment variables
-						Project deployment</small
-					>
-				</article>
-				<article>
-					<h5>
-						NEXT.js & MERN Ecommerce at
-						<a href="https://udemy.com/" target="_blank">Udemy</a>
-					</h5>
-					<p>Remote</p>
-					<p>March 2021 - May 2021</p>
-					<small
-						>Complete User Authentication (Login / Signup) Image and File
-						Uploads Server-side Rendering Pagination Payment Processing Complete
-						Node API w/ Full CRUD Functionality Authorization and Managing
-						Multiple User Roles (guest, user, admin) Responsive + Mobile-First
-						Design Attractive + Responsive App Interface Complete App Deployment
-						with Zeit Now</small
-					>
-				</article>
-				<article>
-					<h5>
-						Full Stack Web Development BootCamp at
-						<a href="https://udemy.com/" target="_blank">Udemy</a>
-					</h5>
+						<br />
+						<small
+							>HTML5 · CSS3 · FlexBox · Bootstrap · SASS · Javascript ·
+							TypeScript · DevTools · React · Testing · Redux · SoftSkills ·
+							Interviews simulations · Team office project simulation</small
+						>
+					</article>
+					<article class="article-cv">
+						<h5>
+							REDUX & MERN eCommerce at
+							<a href="https://www.udemy.com/" target="_blank">Udemy</a>
+						</h5>
+						<p>Remote</p>
+						<p>March 2021 - August 2021</p>
+						<small
+							><a
+								href="https://www.udemy.com/course/mern-ecommerce/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Details</a
+							></small
+						>
+						<br />
+						<small
+							>React with Functional Components & Hooks React router
+							React-Bootstrap UI library How to structure components Component
+							level state & props Managing global state with Redux (Actions &
+							Reducers) Using Redux state in components (useDispatch &
+							useSelector) Creating an extensive back end with Express Working
+							with a MongoDB database and the Mongoose ODM JWT authentication
+							(JSON web tokens) Creating custom authentication middleware Custom
+							error handler Integrating the PayPal API Environment variables
+							Project deployment</small
+						>
+					</article>
+					<article class="article-cv">
+						<h5>
+							NEXT.js & MERN Ecommerce at
+							<a href="https://www.udemy.com/" target="_blank">Udemy</a>
+						</h5>
+						<p>Remote</p>
 
-					<p>Remote</p>
-					<p>October 2020 - February 2021</p>
-					<small>
-						HTML 5 · CSS 3 · Bootstrap 4 · Javascript ES6 · DOM Manipulation ·
-						jQuery · Bash Command Line Git, GitHub and Version Control · Node.js
-						· NPM · Express.js · EJS · REST APIs · SQL · MongoDB · Mongoose ·
-						Authentication · Firebase · React.js · React Hooks · Deployment with
-						GitHub Pages, Heroku and MongoDB Atlas
-					</small>
-				</article>
-				<article>
-					<h5>
-						Introduction to Web Development II at
-						<a
-							href="https://learndigital.withgoogle.com/activate/course/web-development-I"
-							target="_blank"
-							>Google Activate</a
+						<p>March 2021 - May 2021</p>
+						<small
+							><a
+								href="https://www.udemy.com/course/mern-stack-the-complete-guide/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Details</a
+							></small
 						>
-					</h5>
-					<p>Remote</p>
-					<p>August 2020</p>
-					<small
-						>How to define the presentation of a web page and it's elements. How
-						to layout a web page. SEO, Semantic HTML, Usability and
-						Accessibility.
-					</small>
-				</article>
-				<article>
-					<h5>
-						Introduction to Web Development I at
-						<a
-							href="https://learndigital.withgoogle.com/activate/course/web-development-I"
-							target="_blank"
-							>Google Activate</a
-						>
-					</h5>
+						<br />
 
-					<p>Remote</p>
-					<p>July 2020</p>
-					<small
-						>History of the web. How a web site works. How to structure, write
-						and publish a web site.
-					</small>
-				</article>
-				<article>
-					<h5>
-						Professional Formation Superior Grade in Photography at
-						<a
-							href="https://www.andygoldstein.info/escuela-de-fotografia-creativa"
-							target="_blank"
-							rel="noopener noreferrer"
-							>Escuela de Fotografía Creativa Andy Goldstein</a
+						<small
+							>Complete User Authentication (Login / Signup) Image and File
+							Uploads Server-side Rendering Pagination Payment Processing
+							Complete Node API w/ Full CRUD Functionality Authorization and
+							Managing Multiple User Roles (guest, user, admin) Responsive +
+							Mobile-First Design Attractive + Responsive App Interface Complete
+							App Deployment with Zeit Now</small
 						>
-					</h5>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Full Stack Web Development BootCamp at
+							<a
+								href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+								target="_blank"
+								>Udemy</a
+							>
+						</h5>
 
-					<p>Buenos Aires, Argentina</p>
-					<p>January 2011 - November 2013</p>
-				</article>
-				<article>
-					<h5>
-						Professional Formation Medium Grade in Publicity at
-						<a
-							href="https://escueladecreativos.com.ar/"
-							target="_blank"
-							rel="noopener noreferrer"
-							>Escuela Superior de Creativos Publicitarios</a
-						>
-					</h5>
+						<p>Remote</p>
+						<p>October 2020 - February 2021</p>
+						<small>
+							HTML 5 · CSS 3 · Bootstrap 4 · Javascript ES6 · DOM Manipulation ·
+							jQuery · Bash Command Line Git, GitHub and Version Control ·
+							Node.js · NPM · Express.js · EJS · REST APIs · SQL · MongoDB ·
+							Mongoose · Authentication · Firebase · React.js · React Hooks ·
+							Deployment with GitHub Pages, Heroku and MongoDB Atlas
+						</small>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Introduction to Web Development II at
+							<a
+								href="https://learndigital.withgoogle.com/activate/course/web-development-I"
+								target="_blank"
+								>Google Activate</a
+							>
+						</h5>
+						<p>Remote</p>
+						<p>August 2020</p>
+						<small
+							>How to define the presentation of a web page and it's elements.
+							How to layout a web page. SEO, Semantic HTML, Usability and
+							Accessibility.
+						</small>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Introduction to Web Development I at
+							<a
+								href="https://learndigital.withgoogle.com/activate/course/web-development-I"
+								target="_blank"
+								>Google Activate</a
+							>
+						</h5>
 
-					<p>Buenos Aires, Argentina</p>
-					<p>January 2009 - November 2011</p>
-				</article>
-				<article>
-					<h5>
-						Bachelor degree in Exact Science at
-						<spam>Escuela Juan Pablo Duarte y Diez</spam>
-					</h5>
-					<p>Buenos Aires, Argentina</p>
-					<p>2002 - 2007</p>
-				</article>
+						<p>Remote</p>
+						<p>July 2020</p>
+						<small
+							>History of the web. How a web site works. How to structure, write
+							and publish a web site.
+						</small>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Professional Formation Superior Grade in Photography at
+							<a
+								href="https://www.andygoldstein.info/escuela-de-fotografia-creativa"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Escuela de Fotografía Creativa Andy Goldstein</a
+							>
+						</h5>
+
+						<p>Buenos Aires, Argentina</p>
+						<p>January 2011 - November 2013</p>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Professional Formation Medium Grade in Publicity at
+							<a
+								href="https://escueladecreativos.com.ar/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Escuela Superior de Creativos Publicitarios</a
+							>
+						</h5>
+
+						<p>Buenos Aires, Argentina</p>
+						<p>January 2009 - November 2011</p>
+					</article>
+					<article class="article-cv">
+						<h5>
+							Bachelor degree in Exact Science at
+							<spam>Escuela Juan Pablo Duarte y Diez</spam>
+						</h5>
+						<p>Buenos Aires, Argentina</p>
+						<p>2002 - 2007</p>
+					</article>
+				</div>
 			</section>
 			<div class="division"></div>
 
@@ -315,13 +405,13 @@
 			<!-- duration   -->
 
 			<section id="certificates">
-				<h4>
+				<h4 class="mary1">
 					Certificates
 					<a href="#header"
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<article>
+				<article class="article-cv">
 					<h5>
 						First Certificate in English at
 						<a
@@ -335,57 +425,7 @@
 					<p>2007</p>
 				</article>
 			</section>
-			<div class="division"></div>
 
-			<!-- section   -->
-			<!-- h4 Languages   -->
-			<!-- article   -->
-			<!-- Language   -->
-			<!-- Level   -->
-
-			<section id="languages">
-				<h4>
-					Languages
-					<a href="#header"
-						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
-					></a>
-				</h4>
-				<article>
-					<p>Spanish: Native</p>
-					<p>English: Advance</p>
-				</article>
-			</section>
-			<div class="division"></div>
-
-			<!-- section   -->
-			<!-- h4 social media   -->
-			<!-- article   -->
-			<!-- title   -->
-			<!-- link   -->
-
-			<section id="social-media">
-				<h4>
-					Social Media
-					<a href="#header"
-						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
-					></a>
-				</h4>
-				<article>
-					<p>
-						<a
-							href="https://www.linkedin.com/in/octavio-frangipani-080aa947/"
-							target="_blank"
-							>LinkedIn -
-							https://www.linkedin.com/in/octavio-frangipani-080aa947/</a
-						>
-					</p>
-					<p>
-						<a href="https://github.com/octapf?tab=repositories" target="_blank"
-							>Github - https://github.com/octapf?tab=repositories</a
-						>
-					</p>
-				</article>
-			</section>
 			<div class="division"></div>
 
 			<!-- section   -->
@@ -394,13 +434,13 @@
 			<!-- title   -->
 			<!-- link   -->
 			<section id="features">
-				<h4>
+				<h4 class="mary1">
 					Features
 					<a href="#header"
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<article>
+				<article class="article-cv">
 					<p>
 						Ecommerce Web Site Course Project:
 						<a
@@ -410,6 +450,11 @@
 							>Proshop Web App - https://proshop-app-177.herokuapp.com/</a
 						>
 					</p>
+					<iframe
+						src="https://proshop-app-177.herokuapp.com/"
+						frameborder="0"
+						height="300em"
+					></iframe>
 				</article>
 			</section>
 			<div class="division"></div>
@@ -421,57 +466,83 @@
 			<!-- level   -->
 
 			<section id="skills">
-				<h4>
+				<h4 class="mary1">
 					Skills
 					<a href="#header"
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<article>
-					<p>
-						<em class="fa-brands fa-html5"></em><strong> HTML5</strong>
-						- Intermediate
-					</p>
-					<p>
-						<em class="fa-brands fa-css3-alt"></em><strong> CSS3</strong> -
-						Intermediate
-					</p>
-					<p>
-						<em class="fa-brands fa-js"></em><strong> Javascript</strong> -
-						Intermediate
-					</p>
-					<p>
-						<em class="fab fa-bootstrap"></em><strong> Bootstrap</strong> -
-						Intermediate
-					</p>
+				<div class="flex">
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-html5"></em><strong> HTML5</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-css3-alt"></em><strong> CSS3</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-js"></em><strong> Javascript</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fab fa-bootstrap"></em><strong> Bootstrap</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-react"></em><strong> React.js</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p><strong>MongoDB</strong> Intermediate</p>
+					</article>
+					<article class="article-cv width">
+						<p><strong>Express.js</strong> Intermediate</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-node"></em><strong> Node.js</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p><strong>REDUX</strong> Intermediate</p>
+					</article>
+					<article class="article-cv width">
+						<p><strong>Next.js</strong> Intermediate</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-brands fa-git-alt"></em><strong> Git</strong>
+							Intermediate
+						</p>
+					</article>
+					<article class="article-cv width">
+						<p><strong>Adobe Photoshop</strong> Intermediate</p>
+					</article>
 
-					<p>
-						<em class="fa-brands fa-react"></em><strong> React.js</strong> -
-						Intermediate
-					</p>
-					<p><strong>MongoDB</strong> - Intermediate</p>
-					<p><strong>Express.js</strong> - Intermediate</p>
-					<p>
-						<em class="fa-brands fa-node"></em><strong> Node.js</strong> -
-						Intermediate
-					</p>
-					<p><strong>REDUX</strong> - Intermediate</p>
-					<p><strong>Next.js</strong> - Intermediate</p>
-					<p>
-						<em class="fa-brands fa-git-alt"></em><strong> Git</strong> -
-						Intermediate
-					</p>
-					<p><strong>Adobe Photoshop</strong> - Intermediate</p>
-					<p><strong>Adobe Scene7</strong> - Intermediate</p>
-					<p>
-						<em class="fa-solid fa-file-excel"></em
-						><strong> Microsoft Excel</strong> - Advance
-					</p>
-				</article>
+					<article class="article-cv width">
+						<p><strong>Adobe Scene7</strong> Intermediate</p>
+					</article>
+					<article class="article-cv width">
+						<p>
+							<em class="fa-solid fa-file-excel"></em
+							><strong> Microsoft Excel</strong> Advance
+						</p>
+					</article>
+				</div>
 			</section>
 		</main>
-		<footer>
-			<a href="#header"><em class="fa-solid fa-angle-up"></em></a>
-		</footer>
+		<script src="scripts/footer.js"></script>
 	</body>
 </html>

@@ -1,0 +1,413 @@
+:root {
+	font: 16px/1.5 'Oswald', sans-serif;
+
+	--color-hover-btn: rgba(255, 255, 255, 0.4);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	all: unset;
+}
+
+body {
+	background-color: #000000;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236000f9' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	color: #fff;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#menu {
+	visibility: hidden;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: rgba(77, 77, 77, 0.7);
+	width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+/* Navigation */
+
+.nav-main {
+	display: flex;
+	font-size: 1.06rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-brand {
+	width: 3.12rem;
+}
+
+/* Navigation-left */
+
+.nav-main ul.nav-menu {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1;
+	margin: 0 1.2em;
+}
+
+.nav-main ul.nav-menu li a {
+	padding: 0.3em;
+	letter-spacing: 0.03em;
+}
+
+.nav-main ul.nav-menu li a:hover {
+	border-bottom: 0.05em solid #fff;
+}
+
+.nav-menu li {
+	padding: 0.8em;
+}
+
+.bars-menu {
+	display: inline;
+	position: fixed;
+	z-index: 15;
+	font-size: 1.7rem;
+	top: 0.17em;
+	right: 3rem;
+}
+
+/* Showcase */
+
+.showcase-img {
+	width: 100%;
+	height: 33em;
+	object-fit: cover;
+}
+
+.showcase {
+	text-align: center;
+	background: url(images/showcase2.jpg) center/cover fixed no-repeat;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 1em;
+	width: 100%;
+	height: 33em;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.showcase .btn {
+	background: transparent;
+	border: 0.05em solid #fff;
+	display: inline-block;
+	padding: 0.5em 0.8em;
+	margin: 2em 0;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.showcase .btn:hover {
+	background-color: var(--color-hover-btn);
+	transition: 0.3s;
+}
+
+.showcase p {
+	margin: 1em 0;
+}
+
+/* News Cards */
+
+.news-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 2em;
+}
+
+.news-cards article {
+	margin: 2em 0;
+	letter-spacing: 0.05rem;
+}
+
+.news-cards article h3 {
+	margin: 0.2em 0;
+}
+
+.news-cards article p {
+	line-height: 1.5em;
+	margin: 0.5em 0;
+}
+
+.news-cards article img {
+	width: 100%;
+	height: 15em;
+	object-fit: cover;
+}
+
+.news-cards article a {
+	background: transparent;
+	border: 0.05em solid #fff;
+	display: inline-block;
+	padding: 0.5em 0.8em;
+	margin: 1.5em 0;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.news-cards article a:hover {
+	background-color: var(--color-hover-btn);
+	transition: 0.3s;
+}
+
+/* Banner one */
+
+.cards-banner-one {
+	width: 100%;
+	padding: 5em 0;
+	display: flex;
+	flex-flow: column nowrap;
+	background: url(images/tech-red.jpg);
+	margin-bottom: 1em;
+	justify-content: center;
+}
+
+.cards-banner-one * {
+	margin: 0.5rem 3rem;
+}
+
+.cards-banner-one p {
+	width: 60%;
+}
+
+.cards-banner-one a {
+	background: transparent;
+	border: 0.05em solid #fff;
+	width: fit-content;
+	padding: 0.5rem 0.8rem;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.cards-banner-one a:hover {
+	background-color: var(--color-hover-btn);
+}
+
+/* Banner Two */
+
+.cards-banner-two {
+	width: 100%;
+	padding: 5em 0;
+	display: flex;
+	flex-flow: column nowrap;
+	background: url(images/image-five.jpg) center left -5%;
+	margin-bottom: 1em;
+	justify-content: center;
+}
+
+.cards-banner-two * {
+	margin: 0.5rem 3rem;
+}
+
+.cards-banner-two p {
+	width: 60%;
+}
+
+.cards-banner-two a {
+	background: transparent;
+	border: 0.05em solid #fff;
+	width: fit-content;
+	padding: 0.5rem 0.8rem;
+	color: #fff;
+	transition: 0.3s;
+}
+
+.cards-banner-two a:hover {
+	background-color: var(--color-hover-btn);
+}
+
+/* social media */
+
+.social-media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5em 0;
+}
+
+.social-media h2 {
+	letter-spacing: 0.05em;
+}
+
+.social-media ul.flex {
+	display: flex;
+}
+
+.social-media ul li {
+	margin: 1em 0.5em;
+	font-size: 2.5rem;
+}
+
+/* footer */
+
+footer {
+	background: rgb(37, 37, 37);
+	color: #616161;
+	font-size: 0.8rem;
+	width: 100%;
+	text-align: center;
+}
+
+.copyright {
+	padding-bottom: 2.5em;
+	display: block;
+	letter-spacing: 0.1em;
+}
+
+.footer-flex {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: flex-start;
+	justify-content: center;
+	text-align: left;
+}
+
+.footer-flex ul {
+	margin: 3em auto;
+}
+
+.footer-flex ul li {
+	line-height: 2em;
+}
+
+/* Media queries */
+
+@media (max-width: 1180px) {
+	#menu {
+		visibility: hidden;
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		background-color: rgba(77, 77, 77, 0.7);
+		width: 10rem;
+		height: 100%;
+		transition: 0.3s;
+	}
+
+	.nav-main {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	.nav-main ul.nav-menu {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 900px) {
+	.news-cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#menu {
+		visibility: hidden;
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		background-color: rgba(77, 77, 77, 0.7);
+		width: 10rem;
+		height: 100%;
+	}
+
+	.nav-main {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	.nav-main ul.nav-menu {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
+	}
+
+	.cards-banner-one {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+	.cards-banner-two {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 650px) {
+	.nav-main {
+		display: flex;
+		flex-flow: column;
+	}
+}
+
+@media (max-width: 550px) {
+	#menu {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		background-color: rgba(77, 77, 77, 0.7);
+		width: 10rem;
+		height: 100%;
+	}
+
+	.nav-main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav-main ul.nav-menu {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.news-cards {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.cards-banner-one {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+	.cards-banner-two {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-flex {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.footer-flex ul {
+		margin: 1.2em auto;
+	}
+}

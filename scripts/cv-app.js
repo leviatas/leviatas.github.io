@@ -1,0 +1,5 @@
+ScrollReveal().reveal('.info-flex', { delay: 100, reset: true })
+ScrollReveal().reveal('#personal-data', { delay: 100, reset: true })
+ScrollReveal().reveal('#languages', { delay: 150, reset: true })
+ScrollReveal().reveal('#social-media', { delay: 150, reset: true })
+ScrollReveal().reveal('.article-cv', { delay: 100, reset: true })

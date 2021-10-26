@@ -1,71 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
-:root {
-	--header-text-color: #eeeeee;
-	--header-container-color: #222831;
-	--header-element-color: #393e46;
-	--header-title-color: #00adb5;
-}
-
-body {
-	height: 100vh;
-}
-
 .main-container {
 	font-family: 'Poiret One', cursive;
 	color: var(--header-text-color);
 }
 
-/* colors */
-
-.pale {
-	color: var(--header-text-color);
-}
-
-.petrol {
-	color: var(--header-container-color);
-}
-
-.light-petrol {
-	color: var(--header-element-color);
-}
-
-.sky {
+.container-flex-index {
+	display: flex;
+	flex-flow: row wrap;
 	color: var(--header-title-color);
-}
-
-/* background-colors*/
-
-.bgc-pale {
-	background-color: var(--header-text-color);
-}
-
-.bgc-petrol {
-	background-color: var(--header-container-color);
-}
-
-.bgc-light-petrol {
-	background-color: var(--header-element-color);
-}
-
-.bgc-sky {
-	background-color: var(--header-title-color);
+	justify-content: space-around;
+	transition: 0.3s;
 }
 
 .container {
 	border-radius: 1em;
-	flex: 1 1 20%;
+	flex: 1 1 25%;
 	text-align: center;
-	margin: 2.2em;
+	margin: 1em;
 	cursor: pointer;
-	border: solid 1px var(--header-element-color);
+	/* border: solid 0.1px var(--header-element-color); */
+	background-color: var(--header-darker-color);
 	transition: 0.3s;
 }
 
 .container h1 {
-	padding: 2.5em;
-	font-size: 1.8rem;
-	height: 50%;
+	padding: 1.56em;
+	font-weight: 100;
+	font-size: 2rem;
 	letter-spacing: 0.12em;
 	color: var(--header-text-color);
 	transition: 0.3s;
@@ -73,6 +33,7 @@ body {
 
 .container h4 {
 	padding: 1.56em;
+	font-weight: 100;
 	font-size: 1rem;
 	letter-spacing: 0.1em;
 	color: var(--header-text-color);
@@ -81,7 +42,7 @@ body {
 
 .container:hover {
 	transition: 0.3s;
-	background-color: var(--header-element-color);
+	background-color: var(--header-darker-hover-color);
 }
 
 .container h4:hover {
@@ -90,21 +51,4 @@ body {
 
 .container h1:hover {
 	transition: 0.3s;
-}
-
-.container-flex-index {
-	color: var(--header-title-color);
-	justify-content: space-around;
-	flex-wrap: wrap;
-	display: flex;
-	transition: 0.3s;
-}
-
-.container-flex-index:hover {
-	transition: 0.3s;
-	color: white;
-}
-
-.container-flex-index a {
-	width: 30%;
 }

@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-	<title>Web Devv Notes</title>
+	<title>Web Dev Notes</title>
 </head>
 
 <body class="bgc-petrol">
@@ -492,71 +492,7 @@
 								rel="noopener noreferrer">https://scrimba.com/learn/buildablog/css-grid-pt-1-cGZKNCv</a></cite></small>
 				</p>
 			</article>
-			<article class="container-notes">
-				<h2>Grid - CSS</h2>
-				<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns.</p>
-				<p>A grid layout consists of a parent element, with one or more child elements.</p>
-				<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
-				<p>All direct children of the grid container automatically become grid items.</p>
-				<p>The spaces between each column/row are called gaps.</p>
-				<p><code>display: grid;<br>
-					grid-column-gap: 50px; <br>
-					grid-row-gap: 50px; <br>
-					grid-gap: 50px 100px;</code></p>
-				<p>The grid-gap property is a shorthand property</p>
-				<p><img src="images/grid_lines.png" alt="flex-items" width="100%"></p>
-				<p>Place a grid item at column line 1, and let it end on column line 3:</p>
-				<p><code>.item1 {<br>
-					grid-column-start: 1;<br>
-					grid-column-end: 3;
-				  }</code></p>
 
-				<p><small><cite><a
-								href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
-				</p>
-			</article>
-			<article class="container-notes">
-				<h2>Grid Properties - CSS</h2>
-				<p>Property Description</p>
-				<p><mark>column-gap</mark> Specifies the gap between the columns</p>
-				<p><mark>gap</mark> A shorthand property for the row-gap and the column-gap properties</p>
-				<p><mark>grid</mark> A shorthand property for the grid-template-rows, grid-template-columns,
-					grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties</p>
-				<p><mark>grid-area</mark> Either specifies a name for the grid item, or this property is a shorthand
-					property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties</p>
-				<p><mark>grid-auto-columns</mark> Specifies a default column size</p>
-				<p><mark>grid-auto-flow</mark> Specifies how auto-placed items are inserted in the grid</p>
-				<p><mark>grid-auto-rows </mark> Specifies a default row size</p>
-				<p><mark>grid-column</mark> A shorthand property for the grid-column-start and the grid-column-end
-					properties</p>
-				<p><mark>grid-column-end</mark> Specifies where to end the grid item</p>
-				<p><mark>grid-column-gap</mark> Specifies the size of the gap between columns</p>
-
-				<p><small><cite><a
-								href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
-				</p>
-			</article>
-			<article class="container-notes">
-				<h2>Grid Properties II - CSS</h2>
-				<p>Property Description</p>
-				<p><mark>grid-column-start</mark> Specifies where to start the grid item</p>
-				<p><mark>grid-gap</mark> A shorthand property for the grid-row-gap and grid-column-gap properties</p>
-				<p><mark>grid-row</mark> A shorthand property for the grid-row-start and the grid-row-end properties</p>
-				<p><mark>grid-row-end</mark> Specifies where to end the grid item</p>
-				<p><mark>grid-row-gap</mark> Specifies the size of the gap between rows</p>
-				<p><mark>grid-row-start</mark> Specifies where to start the grid item</p>
-				<p><mark>grid-template</mark> A shorthand property for the grid-template-rows, grid-template-columns and
-					grid-areas properties</p>
-				<p><mark>grid-template-areas</mark> Specifies how to display columns and rows, using named grid items
-				</p>
-				<p><mark>grid-template-columns</mark> Specifies the size of the columns, and how many columns in a grid
-					layout</p>
-				<p><mark>grid-template-rows</mark> Specifies the size of the rows in a grid layout</p>
-				<p><mark>row-gap</mark> Specifies the gap between the grid rows</p>
-				<p><small><cite><a
-								href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
-				</p>
-			</article>
 			<article class="container-notes">
 				<h2>Transition property - CSS</h2>
 				<p>Allows you to change property values smoothly, over a given duration.</p>
@@ -619,7 +555,8 @@
 					<mark>animation-timing-function</mark> <br>
 					<mark>animation-fill-mode</mark> <br>
 					<mark>animation-play-state</mark> <br>
-					<mark>animation</mark></p>
+					<mark>animation</mark>
+				</p>
 				<p></p>
 				<p><code>@keyframes example {<br>
 					from {background-color: red;} <br>
@@ -641,22 +578,444 @@
 					animation-name: example; <br>
 					animation-duration: 4s;
 				  } <br></code></p>
-				  <p>
-					keywords "from" and "to" represents 0% and 100%. <hr>		
-					By using percent, you can add as many style changes as you like. <hr>
-					Use negative values on "animation-delay" to decide at what point the animation will start. <hr>
-					The animation-iteration-count: number of times animations runs. "infinite" is allowed. <hr>		
-					animation-direction: normal reverse alternate alternate-reverse. <hr>
-					The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both). <hr>
-					animation-fill-mode: none forwards backwards both. <hr>
-					shorthand {animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction} <hr>
-					animation-play-state: paused|running|initial|inherit; <hr>
-					animation-timing-function: linear, ease, ease-in, ease-out, ease-in-out</p>
+
 
 				<p><small><cite><a
 								href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></cite></small>
 				</p>
 			</article>
+			<article class="container-notes">
+				<h2>Animation II - CSS</h2>
+				<p>
+					keywords <mark>"from" and "to"</mark> represents <mark>0% and 100%.</mark>
+					<br>
+					By using <mark>percent in @keyframes</mark>, you can add as many style changes as you like.
+					<br>
+					Use negative values on "animation-delay" to decide at what point the animation will start.
+					<br>
+					The animation-iteration-count: number of times animations runs. "infinite" is allowed.
+					<br>
+					animation-direction: normal reverse alternate alternate-reverse.
+					<br>
+					The animation-fill-mode property specifies a style for the target element when the animation is not
+					playing (before it starts, after it ends, or both).
+					<br>
+					animation-fill-mode: none forwards backwards both.
+					<br>
+					shorthand {animation: animation-name animation-duration animation-timing-function animation-delay
+					animation-iteration-count animation-direction}
+					<br>
+					animation-play-state: paused|running|initial|inherit;
+					<br>
+					animation-timing-function: linear, ease, ease-in, ease-out, ease-in-out
+				</p>
+				<p><small><cite><a
+								href="https://www.w3schools.com/css/css3_animations.asp">https://www.w3schools.com/css/css3_animations.asp</a></cite></small>
+				</p>
+			</article>
+			<article class="container-notes">
+				<h2>CSS Grid - Introduction</h2>
+				<p>CSS Grid Layout (aka “Grid” or “CSS Grid”), is a <mark>two-dimensional grid-based layout
+						system</mark> that,
+					compared to any web layout system of the past, completely changes the way we design user interfaces.
+					<br>
+					CSS has always been used to layout our web pages, but it’s never done a very good job of it. <br>
+					First,
+					we used tables, then floats, positioning and inline-block, but all of these methods were essentially
+					hacks and left out a lot of important functionality (vertical centering, for instance). <br> Flexbox
+					is
+					also a very great layout tool, but its one-directional flow has different use cases — and they
+					actually work together quite well! <br> <mark>Grid is the very first CSS module created specifically
+						to
+						solve
+						the layout problems</mark> we’ve all been hacking our way around for as long as we’ve been
+					making websites.
+				</p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+			<article class="container-notes">
+				<h2>Grid Basics I - CSS</h2>
+				<p>The CSS Grid Layout Module offers a grid-based layout system, with <mark>rows and columns</mark>.</p>
+				<p>A grid layout consists of a parent element, with one or more child elements.</p>
+				<p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+				<p>All direct children of the grid container automatically become grid items.</p>
+				<p>The <mark>spaces between</mark> each column/row are <mark>called gaps</mark>.</p>
+				<p><code>display: grid;<br>
+					grid-column-gap: 50px; <br>
+					grid-row-gap: 50px; <br>
+					grid-gap: 50px 100px;</code></p>
+				<p>The grid-gap property is a shorthand property</p>
+				<p><img src="images/grid_lines.png" alt="flex-items" width="100%"></p>
+				<p>Place a grid item at column line 1, and let it end on column line 3:</p>
+				<p><code>.item1 {<br>
+					grid-column-start: 1;<br>
+					grid-column-end: 3;
+				  }</code></p>
+
+				<p><small><cite><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank"
+								rel="noopener noreferrer">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
+				</p>
+			</article>
+			<article class="container-notes">
+				<h2>Grid Basics II - CSS</h2>
+				<p>To get started you have to define a container element as a grid with <code>display: grid;</code>, set
+					the column
+					and row sizes with <mark>grid-template-columns and grid-template-rows</mark>, and then place its
+					child elements
+					into the grid with <mark>grid-column and grid-row</mark>. <br> Similarly to flexbox, the source
+					order of the grid
+					items doesn’t matter. Your CSS can place them in any order, which makes it super easy to
+					<mark>rearrange
+						your grid with media queries</mark>. <br> Imagine defining the layout of your entire page, and
+					then completely
+					rearranging it to accommodate a different screen width all with only a couple lines of CSS. <br>
+					Grid is
+					one of <mark>the most powerful CSS modules ever introduced</mark>.
+				</p>
+
+				<p><small><cite><a
+								href="https://css-tricks.com/snippets/css/complete-guide-grid/">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+			<article class="container-notes">
+				<h2>Grid Properties List - CSS</h2>
+				<p>Property Description</p>
+				<p><mark>column-gap</mark> Specifies the gap between the columns</p>
+				<p><mark>gap</mark> A shorthand property for the row-gap and the column-gap properties</p>
+				<p><mark>grid</mark> A shorthand property for the grid-template-rows, grid-template-columns,
+					grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties</p>
+				<p><mark>grid-area</mark> Either specifies a name for the grid item, or this property is a shorthand
+					property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties</p>
+				<p><mark>grid-auto-columns</mark> Specifies a default column size</p>
+				<p><mark>grid-auto-flow</mark> Specifies how auto-placed items are inserted in the grid</p>
+				<p><mark>grid-auto-rows </mark> Specifies a default row size</p>
+				<p><mark>grid-column</mark> A shorthand property for the grid-column-start and the grid-column-end
+					properties</p>
+				<p><mark>grid-column-end</mark> Specifies where to end the grid item</p>
+				<p><mark>grid-column-gap</mark> Specifies the size of the gap between columns</p>
+
+				<p><small><cite><a
+								href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
+				</p>
+			</article>
+			<article class="container-notes">
+				<h2>Grid Properties List II - CSS</h2>
+				<p>Property Description</p>
+				<p><mark>grid-column-start</mark> Specifies where to start the grid item</p>
+				<p><mark>grid-gap</mark> A shorthand property for the grid-row-gap and grid-column-gap properties</p>
+				<p><mark>grid-row</mark> A shorthand property for the grid-row-start and the grid-row-end properties</p>
+				<p><mark>grid-row-end</mark> Specifies where to end the grid item</p>
+				<p><mark>grid-row-gap</mark> Specifies the size of the gap between rows</p>
+				<p><mark>grid-row-start</mark> Specifies where to start the grid item</p>
+				<p><mark>grid-template</mark> A shorthand property for the grid-template-rows, grid-template-columns and
+					grid-areas properties</p>
+				<p><mark>grid-template-areas</mark> Specifies how to display columns and rows, using named grid items
+				</p>
+				<p><mark>grid-template-columns</mark> Specifies the size of the columns, and how many columns in a grid
+					layout</p>
+				<p><mark>grid-template-rows</mark> Specifies the size of the rows in a grid layout</p>
+				<p><mark>row-gap</mark> Specifies the gap between the grid rows</p>
+				<p><small><cite><a
+								href="https://www.w3schools.com/css/css_grid.asp">https://www.w3schools.com/css/css_grid.asp</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>CSS Grid - Terminology</h2>
+				<h3>Gird Container</h3>
+				<p>The element on which display: grid is applied. It’s the direct parent of all the grid items. <br> In
+					this example container is the grid container.
+					<code>
+						&lt;div class="container">
+					&lt;div class="item item-1"> &lt;/div>
+					&lt;div class="item item-2"> &lt;/div>
+					&lt;div class="item item-3"> &lt;/div>
+					&lt;div></code>
+				</p>
+				<h3>Grid Item</h3>
+				<p>The children (i.e. direct descendants) of the grid container. <br> Here the item elements are grid
+					items, but sub-item isn’t. <br>
+					<code>&lt;div class="container">
+					&lt;div class="item"> &lt;/div>
+					&lt;div class="item">
+					  &lt;p class="sub-item"> &lt;/p>
+					&lt;/div>
+					&lt;div class="item"> &lt;/div>
+				  &lt;/div></code>
+				</p>
+				<h3>Grid Line</h3>
+				<p>The dividing lines that make up the structure of the grid. They can be either vertical (“column grid
+					lines”) or horizontal (“row grid lines”) and reside on either side of a row or column. Here the
+					yellow line is an example of a column grid line.</p>
+				<img src="images/new/terms-grid-line.svg" alt="terms-gird-line">
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>CSS Grid - Terminology II</h2>
+
+				<h3>Grid Track</h3>
+				<p>The space between two adjacent grid lines. You can think of them as the columns or rows of the grid.
+					Here’s the grid track between the second and third-row grid lines.</p>
+				<img src="images/new/terms-grid-track.svg" alt="grid-track">
+
+				<h3>Grid Area</h3>
+				<p>The total space surrounded by four grid lines. A grid area may be composed of any number of grid
+					cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.</p>
+				<img src="images/new/terms-grid-area.svg" alt="grid-area">
+				<h3>Grid Cell</h3>
+				<p>The space between two adjacent row and two adjacent column grid lines. It’s a single “unit” of the
+					grid. Here’s the grid cell between row grid lines 1 and 2, and column grid lines 2 and 3.</p>
+				<img src="images/new/terms-grid-cell.svg" alt="grid-cell">
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties I</h2>
+				<h2><mark>Container</mark></h2>
+				<p>display <code>.container { <br>
+					display: grid | inline-grid;
+				  }</code></p>
+				<p>grid-template-columns <br>
+					grid-template-rows <code>.container { <br>
+						grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end]; <br>
+						grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+					  }</code></p>
+				<img class="bgc-pale" src="images/new/template-column-rows-02.svg" alt="grid-template-columns-rows">
+				<p>Note that a line can have more than one name. <br>
+					<code>.container { <br>
+						grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+					  }</code>
+					If your definition contains repeating parts, you can use the repeat() notation to streamline things:
+					<br>
+					<code>.container { <br>
+						grid-template-columns: repeat(3, 20px [col-start]);
+					  }</code>
+					If multiple lines share the same name, they can be referenced by their line name and count. <br>
+					<code>.item { <br>
+						grid-column-start: col-start 2;
+					  }</code>
+					The fr unit allows you to set the size of a track as a fraction of the free space of the grid
+					container. <br>
+					<code>.container { <br>
+						grid-template-columns: 1fr 1fr 1fr;
+					  }</code>
+					The free space is calculated after any non-flexible items. <br>
+					<code>.container {
+						grid-template-columns: 1fr 50px 1fr 1fr;
+					  }</code>
+				</p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties II</h2>
+				<h2><mark>Container</mark></h2>
+				<h3>grid-template-areas</h3>
+				<p>Defines a grid template by referencing the names of the grid areas which are specified with the
+					grid-area property. Repeating the name of a grid area causes the content to span those cells. A
+					period signifies an empty cell. The syntax itself provides a visualization of the structure of the
+					grid.
+					Values: <br>
+					<mark>grid-area-name</mark> – the name of a grid area specified with grid-area <br>
+					<mark>" . "</mark> – a period signifies an empty grid cell <br>
+					<mark>none</mark> – no grid areas are defined <br>
+					<code>.item-a {<br>
+							grid-area: header;} <br>
+						  .item-b {<br>
+							grid-area: main;} <br>
+						  .item-c { <br>
+							grid-area: sidebar;} <br>
+						  .item-d { <br>
+							grid-area: footer;} <br>
+						  .container { <br>
+							display: grid; <br>
+							grid-template-columns: 50px 50px 50px 50px; <br>
+							grid-template-rows: auto; <br>
+							grid-template-areas: <br>
+							  "header header header header" <br>
+							  "main main . sidebar" <br>
+							  "footer footer footer footer";}<br></code>
+					Each row in your declaration needs to have the same number of cells. <br>
+					You can use any number of adjacent periods to declare a single empty cell. As long as the periods
+					have no spaces between them they represent a single cell. <br>
+					Notice that you’re not naming lines with this syntax, just areas. When you use this syntax the lines
+					on either end of the areas are actually getting named automatically. If the name of your grid area
+					is foo, the name of the area’s starting row line and starting column line will be foo-start, and the
+					name of its last row line and last column line will be foo-end. <br> This means that some lines
+					might
+					have multiple names, such as the far left line in the above example, which will have three names:
+					header-start, main-start, and footer-start.
+				</p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties III</h2>
+				<h2><mark>Container</mark></h2>
+				<h3>grid-template</h3>
+				<p>A shorthand for setting grid-template-rows, grid-template-columns, and grid-template-areas in a
+					single declaration. <br>
+					<code>.container { <br>
+					grid-template: <br>
+					  [row1-start] "header header header" 25px [row1-end] <br>
+					  [row2-start] "footer footer footer" 25px [row2-end] <br>
+					  / auto 50px auto;} <br></code>
+				</p>
+				<h3>column-gap <br>
+					row-gap <br></h3>
+				<p><code>.container { <br>
+						grid-template-columns: 100px 50px 100px; <br>
+						grid-template-rows: 80px auto 80px; <br>
+						column-gap: 10px; <br>
+						row-gap: 15px;} <br></code></p>
+				<h3>gap</h3>
+				<p>A shorthand for row-gap and column-gap. <br>
+					<code>.container { <br>
+							grid-template-columns: 100px 50px 100px; <br>
+							grid-template-rows: 80px auto 80px; <br>
+							gap: 15px 10px; <br>
+						  }</code>
+				</p>
+				<h3>justify-items</h3>
+				<p>Aligns grid items along the inline (row) axis. This value applies to all grid items inside the
+					container.
+					<code>.container { <br>
+					justify-items: start | end | center | stretch;} <br></code> This behavior can also be set on individual grid items
+					via the justify-self property.
+				</p>
+				<h3>align-items</h3>
+				<p>Aligns grid items along the block (column) axis. This value applies to all grid items inside the
+					container.
+					<code>.container { <br>
+						align-items: start | end | center | stretch;} <br></code>
+				</p>
+				<h3>place items</h3>
+				<p>sets both the align-items and justify-items properties in a single declaration. <br><code>.center { <br>
+							display: grid; <br>
+							place-items: center;} <br></code></p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties IV</h2>
+				<h2><mark>Container</mark></h2>
+				<h3>justify-content</h3>
+				<p>This property aligns the grid along the inline (row) axis. <code>.container { <br>
+					justify-content: start | end | center | stretch | space-around | space-between | space-evenly;} <br></code>
+				</p>
+				<p><img src="images/new/justify-content-start.svg" alt="justify-content-start"></p>
+				<h3>align-content</h3>
+				<p>This property aligns the grid along the block (column) axis. <code>.container { <br>
+					align-content: start | end | center | stretch | space-around | space-between | space-evenly;} <br></code></p>
+				<p><img src="images/new/align-content-start.svg" alt="align-content-start"></p>
+				<h3>place-content</h3>
+				<p>place-content sets both the <mark>align-content and justify-content</mark> properties in a single
+					declaration.
+					<br>
+					The first value sets align-content, the second value justify-content.
+				</p>
+				<h3>grid-auto-columns <br>
+					grid-auto-rows</h3>
+				<p>Specifies the size/width of any auto-generated grid tracks. <br>
+					Implicit tracks get created when there are <mark>more grid items than cells in the grid or when a
+						grid item is placed outside of the explicit grid.</mark> <code>.container { <br>
+							grid-auto-columns: 60px;} <br></code></p>
+				<p><img src="images/new/grid-auto-columns-rows-03.svg" alt="grid-auto-columns-rows"></p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties V</h2>
+				<h2><mark>Container</mark></h2>
+				<h3>grid-auto-flow</h3>
+				<p>If you have grid items that you don’t explicitly place on the grid, the auto-placement algorithm
+					kicks in to automatically place the items. This property controls how the items auto-placement
+					algorithm
+					works. <br>
+					<mark>row</mark> – tells the auto-placement algorithm to fill in each row in turn, adding new rows
+					as necessary
+					(default) <br>
+					<mark>column</mark> – tells the auto-placement algorithm to fill in each column in turn, adding new
+					columns as
+					necessary <br>
+					<mark>dense</mark> – tells the auto-placement algorithm to attempt to fill in holes earlier in the
+					grid if
+					smaller items come up later <br>
+					<code>.container { <br>
+					grid-auto-flow: row | column | row dense | column dense;} <br></code>
+				</p>
+				<h3>grid</h3>
+				<p>A <mark>shorthand</mark> for setting all of the following properties in a single declaration: <br>
+					grid-template-rows <br> grid-template-columns <br> grid-template-areas <br> grid-auto-rows <br> grid-auto-columns <br>
+					and grid-auto-flow </p>
+					<p>The following two code blocks are equivalent: <br>
+					<code>.container { <br>
+						grid: 100px 300px / 3fr 1fr;} <br>
+					  
+					  .container { <br>
+						grid-template-rows: 100px 300px; <br>
+						grid-template-columns: 3fr 1fr;} <br></code>
+					Equivalent:
+				<code>.container {<br>
+					grid: auto-flow / 200px 1fr;} <br>
+				  
+				  .container {<br>
+					grid-auto-flow: row; <br>
+					grid-template-columns: 200px 1fr;} <br></code>
+				Equivalent: <br>
+			<code>.container { <br>
+				grid: [row1-start] "header header header" 1fr [row1-end] <br>
+					  [row2-start] "footer footer footer" 25px [row2-end] <br>
+					  / auto 50px auto;} <br> <br>
+					  .container { <br>
+						grid-template-areas:  <br>
+						  "header header header" <br>
+						  "footer footer footer"; <br>
+						grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end]; <br>
+						grid-template-columns: auto 50px auto;} <br>
+					
+					</code></p>
+
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties VI</h2>
+				<h2><mark>Items</mark></h2>
+				<p><mark>float, display: inline-block, display: table-cell, vertical-align and column-* properties have no effect on a grid item.</mark></p>
+				<h3>grid-column-start <br>
+					grid-column-end <br>
+					grid-row-start <br>
+					grid-row-end</h3>
+					<p>Determines a grid item’s location within the grid by referring to specific grid lines.</p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+			<article class="container-notes">
+				<h2></h2>
+				<p></p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+
 		</section>
 	</main>
 	<script src="scripts/footer.js"></script>

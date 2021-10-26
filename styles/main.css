@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+	--header-text-color: #eeeeee;
+	--header-container-color: #222831;
+	--header-element-color: #393e46;
+	--header-darker-color: #1e2229;
+	--header-darker-hover-color: #14171b;
+	--header-title-color: #00adb5;
+	--text-color: rgb(236, 236, 236);
+	--body-color: #5026a7;
+	--container-color: #8d448b;
+	--box-color: #cc6a87;
+	--border-color: #eccd8f;
+	--color-hover-btn: rgba(255, 255, 255, 0.4);
+}
+
 * {
 	padding: 0;
 	margin: 0;
+}
+body {
+	box-sizing: border-box;
+	width: 95%;
+	margin: auto;
 }
 
 a {
@@ -9,6 +33,46 @@ a {
 
 ul {
 	list-style: none;
+}
+
+/* colors */
+
+.pale {
+	color: var(--header-text-color);
+}
+
+.petrol {
+	color: var(--header-container-color);
+}
+
+.light-petrol {
+	color: var(--header-element-color);
+}
+
+.sky {
+	color: var(--header-title-color);
+}
+
+/* background-colors*/
+
+.bgc-beige {
+	background-color: var(--border-color);
+}
+
+.bgc-pale {
+	background-color: var(--header-text-color);
+}
+
+.bgc-petrol {
+	background-color: var(--header-container-color);
+}
+
+.bgc-light-petrol {
+	background-color: var(--header-element-color);
+}
+
+.bgc-sky {
+	background-color: var(--header-title-color);
 }
 
 /* SCROLL BAR */
@@ -39,16 +103,17 @@ ul {
 	display: flex;
 }
 
-.ul-flex li {
+.ul-flex a li {
 	padding: 0 1.87em;
+	flex: 1 1 auto;
 	padding-top: 1.3em;
 	margin: 2.18em auto;
 	font-size: 1.25rem;
 }
 
-.ul-flex li:hover {
+.ul-flex a:hover {
 	transition: 0.3s;
-	background-color: var(--header-element-color);
+	background-color: var(--header-darker-hover-color);
 }
 
 .navbar-flex {
@@ -67,9 +132,14 @@ ul {
 .logo {
 	display: inline;
 	padding: 1.56em 3.12em;
-	font-size: 2.1rem;
-	letter-spacing: 0.15em;
+	font-weight: 100;
+	font-size: 2.5rem;
+	letter-spacing: 0.1em;
 	color: var(--header-title-color);
+}
+
+.logo h1 {
+	font-weight: 100;
 }
 
 /* footer */

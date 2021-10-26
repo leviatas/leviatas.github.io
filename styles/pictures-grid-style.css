@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--header-container-color);
+}
+
+.grid-container {
+	width: 40%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, [col] 1fr);
+	grid-template-areas:
+		'machu-pichu machu-pichu machu-pichu machu-pichu '
+		'flor-de-piedra flor-de-piedra flor-de-piedra posilipo2'
+		'vias laguna-colorada2 bote ruinas'
+		'isla-del-sol isla-del-sol isla-del-sol isla-del-sol'
+		'botanico botanico sagrada sagrada'
+		'laguna-colorada laguna-colorada laguna-colorada laguna-colorada'
+		'posilipo posilipo w1 w1'
+		'thailand thailand thailand2 thailand2'
+		'w2 w2 arco arco'
+		'selva selva selva selva'
+		'flamenco flamenco isla-del-sol2 isla-del-sol2'
+		'machu2 machu2 machu2 machu2';
+}
+
+.grid-container .grid-item {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.3s;
+}
+
+.grid-container .grid-item:hover {
+	transform: scale(1.1);
+	z-index: 10;
+	filter: grayscale(0%);
+	transition: 0.3s;
+}
+
+.img-container {
+	overflow: hidden;
+}
+
+.bote {
+	grid-area: bote;
+	/* animation-name: bote;
+	animation-duration: 5s;
+	background-image: url('../images/new/Paisajes/ruinas.jpg');
+	animation-iteration-count: infinite; */
+}
+.cerdos {
+	grid-area: cerdos;
+}
+.flamenco {
+	grid-area: flamenco;
+}
+.flor-de-piedra {
+	grid-area: flor-de-piedra;
+}
+.isla-del-sol {
+	grid-area: isla-del-sol;
+}
+.isla-del-sol2 {
+	grid-area: isla-del-sol2;
+}
+.laboca {
+	grid-area: laboca;
+}
+.laguna-colorada {
+	grid-area: laguna-colorada;
+}
+.laguna-colorada2 {
+	grid-area: laguna-colorada2;
+}
+.machu-pichu {
+	grid-area: machu-pichu;
+}
+.riachuelo {
+	grid-area: riachuelo;
+}
+.ruinas {
+	grid-area: ruinas;
+}
+.selva {
+	grid-area: selva;
+}
+.vias {
+	grid-area: vias;
+}
+.vias2 {
+	grid-area: vias2;
+}
+.botanico {
+	grid-area: botanico;
+}
+.botanico2 {
+	grid-area: botanico2;
+}
+
+.posilipo {
+	grid-area: posilipo;
+}
+.arco {
+	grid-area: arco;
+}
+.w1 {
+	grid-area: w1;
+}
+.w2 {
+	grid-area: w2;
+}
+.sagrada {
+	grid-area: sagrada;
+}
+.guayna {
+	grid-area: guayna;
+}
+.machu2 {
+	grid-area: machu2;
+}
+.posilipo2 {
+	grid-area: posilipo2;
+}
+
+.thailand {
+	grid-area: thailand;
+}
+
+.thailand2 {
+	grid-area: thailand2;
+}

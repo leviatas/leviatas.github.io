@@ -2,13 +2,16 @@ const header = document.createElement('header')
 
 header.innerHTML = `<header id="header">
 <nav>
-    <div class="navbar-flex bgc-petrol"><a class="no-txt-dec logo" href="index.html"><h1>Octavio Frangipani</h1></a>
-        <ul class="ul-flex no-list-style">
-            <li><a class="no-txt-dec pale" href="index.html">Home</a></li>
-            <li><a class="no-txt-dec pale" href="cv.html">CV</a></li>
-            <li><a class="no-txt-dec pale" href="box-model.html">Box-Model</a></li>
-            <li><a class="no-txt-dec pale" href="notes.html">Notes</a></li>
-            <li><a class="no-txt-dec pale" href="https://proshop-app-177.herokuapp.com/">Proshop</a></li>
+    <div class="navbar-flex bgc-petrol">
+    <a class="logo" href="index.html"><h1>Octavio Frangipani</h1></a>
+        <ul class="ul-flex">
+            <a class="pale" href="index.html"><li>Home</li></a>
+            <a class="pale" href="cv.html"><li>CV</li></a>
+            <a class="pale" href="box-model.html"><li>Box-Model</li></a>
+            <a class="pale" href="notes.html"><li>Notes</li></a>
+            <a class="pale" href="tech-news.html"><li>TechNews</li></a>
+            <a class="pale" href="pictures-grid.html"><li>Pictures-Grid</li></a>
+            <a class="pale" href="https://proshop-app-177.herokuapp.com/"><li>Proshop</li></a>
         </ul>
     </div>
 </nav>

@@ -1,60 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
-:root {
-	--header-text-color: #eeeeee;
-	--header-container-color: #222831;
-	--header-element-color: #393e46;
-	--header-title-color: #00adb5;
-	--text-color: rgb(236, 236, 236);
-	--body-color: #5026a7;
-	--container-color: #8d448b;
-	--box-color: #cc6a87;
-	--border-color: #eccd8f;
-}
-
 .main-container {
 	font-family: 'Poiret One', cursive;
 	color: var(--header-text-color);
-}
-
-/* colors */
-
-.pale {
-	color: var(--header-text-color);
-}
-
-.petrol {
-	color: var(--header-container-color);
-}
-
-.light-petrol {
-	color: var(--header-element-color);
-}
-
-.sky {
-	color: var(--header-title-color);
-}
-
-/* background-colors*/
-
-.bgc-beige {
-	background-color: var(--border-color);
-}
-
-.bgc-pale {
-	background-color: var(--header-text-color);
-}
-
-.bgc-petrol {
-	background-color: var(--header-container-color);
-}
-
-.bgc-light-petrol {
-	background-color: var(--header-element-color);
-}
-
-.bgc-sky {
-	background-color: var(--header-title-color);
 }
 
 .headings {

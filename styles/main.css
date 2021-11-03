@@ -101,6 +101,7 @@ ul {
 
 .ul-flex {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .ul-flex a li {
@@ -153,7 +154,7 @@ ul {
 	font-size: 0.8rem;
 }
 
-.footer a em {
+.footer section a em {
 	font-size: 2rem;
 }
 
@@ -207,8 +208,19 @@ ul {
 	flex-wrap: wrap;
 }
 
-.width {
-	width: 8%;
+.grid300 {
+	justify-items: stretch;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2em;
+}
+
+.grid120 {
+	margin: 0 auto;
+	justify-items: stretch;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 1em;
 }
 
 .width30 {
@@ -231,6 +243,10 @@ ul {
 	margin: 1em 0;
 }
 
+.mar-bottom1 {
+	margin-bottom: 1em;
+}
+
 .pady1 {
 	padding: 0.5em 0;
 }
@@ -241,4 +257,43 @@ ul {
 
 .transition03 {
 	transition: 0.3s;
+}
+
+.sm {
+	font-size: 0.5em;
+}
+
+.display-block {
+	display: block;
+}
+
+@media screen and (max-width: 71.87em) {
+	.logo {
+		text-align: center;
+	}
+
+	.navbar-flex {
+		flex-direction: column;
+		text-align: center;
+		margin: 0;
+	}
+
+	.ul-flex {
+		flex-direction: column;
+	}
+
+	.ul-flex a li {
+		padding: 0;
+		margin: 0.3em;
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 37.5em) {
+	.logo {
+		text-align: center;
+	}
+
+	.ul-flex {
+		flex-direction: column;
+	}
 }

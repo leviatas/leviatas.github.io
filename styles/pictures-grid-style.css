@@ -9,10 +9,12 @@ body {
 }
 
 .grid-container {
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
 	display: grid;
+	transition: 0.3s;
 	grid-template-columns: repeat(4, [col] 1fr);
+	gap: 0.2em;
 	grid-template-areas:
 		'machu-pichu machu-pichu machu-pichu machu-pichu '
 		'flor-de-piedra flor-de-piedra flor-de-piedra posilipo2'
@@ -29,6 +31,7 @@ body {
 }
 
 .grid-container .grid-item {
+	border-radius: 0.2em;
 	width: 100%;
 	filter: grayscale(100%);
 	transition: 0.3s;
@@ -132,4 +135,25 @@ body {
 
 .thailand2 {
 	grid-area: thailand2;
+}
+
+@media screen and (max-width: 71.87em) {
+	.grid-container {
+		width: 70%;
+	}
+	.grid-container .grid-item:hover {
+		transform: scale(1.04);
+	}
+}
+
+@media screen and (max-width: 37.5em) {
+	.grid-container {
+		width: 100%;
+	}
+	.grid-container .grid-item:hover {
+		transform: scale(1.02);
+		z-index: 10;
+		filter: grayscale(0%);
+		transition: 0.3s;
+	}
 }

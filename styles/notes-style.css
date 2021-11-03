@@ -10,10 +10,10 @@ code {
 	color: var(--header-text-color);
 }
 
-.container-flex-notes {
+.container-grid-notes {
 	color: var(--header-text-color);
-	flex-flow: row wrap;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
 }
 
 .font-raleway {
@@ -23,7 +23,6 @@ code {
 .container-notes {
 	background-color: var(--header-darker-color);
 	border-radius: 1em;
-	flex: 1 1 18%;
 	overflow: hidden;
 	font-size: 0.9rem;
 	text-align: left;
@@ -31,6 +30,7 @@ code {
 	padding: 2em;
 	margin: 2.2em;
 	transition: 0.3s;
+	word-break: break-word;
 }
 
 .container-notes h2 {
@@ -52,4 +52,8 @@ code {
 .container-notes:hover {
 	transition: 0.3s;
 	background-color: var(--header-darker-hover-color);
+}
+
+.two-cols {
+	grid-column: 1 / span 2;
 }

@@ -17,9 +17,10 @@
 
 <body class="bgc-petrol">
 	<script src="scripts/header.js"></script>
-	<main class="main-container bgc-petrol font-raleway">
-		<h1 class="text-centered letter-spacing1">Web Dev Notes</h1>
-		<section class="container-flex-notes">
+	<main class="main-container bgc-petrol font-raleway text-centered">
+		<h1 class="letter-spacing1">Web Dev Notes</h1>
+		<a class="pale mar1" href="#footer"><em class="fas fa-chevron-down"></em></a>
+		<section class="container-grid-notes">
 			<article class="container-notes">
 				<h2>Responsive Design - units</h2>
 
@@ -750,7 +751,7 @@
 				<p>The dividing lines that make up the structure of the grid. They can be either vertical (“column grid
 					lines”) or horizontal (“row grid lines”) and reside on either side of a row or column. Here the
 					yellow line is an example of a column grid line.</p>
-				<img src="images/new/terms-grid-line.svg" alt="terms-gird-line">
+				<img src="images/terms-grid-line.svg" alt="terms-gird-line">
 				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
 								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
 				</p>
@@ -763,16 +764,16 @@
 				<h3>Grid Track</h3>
 				<p>The space between two adjacent grid lines. You can think of them as the columns or rows of the grid.
 					Here’s the grid track between the second and third-row grid lines.</p>
-				<img src="images/new/terms-grid-track.svg" alt="grid-track">
+				<img src="images/terms-grid-track.svg" alt="grid-track">
 
 				<h3>Grid Area</h3>
 				<p>The total space surrounded by four grid lines. A grid area may be composed of any number of grid
 					cells. Here’s the grid area between row grid lines 1 and 3, and column grid lines 1 and 3.</p>
-				<img src="images/new/terms-grid-area.svg" alt="grid-area">
+				<img src="images/terms-grid-area.svg" alt="grid-area">
 				<h3>Grid Cell</h3>
 				<p>The space between two adjacent row and two adjacent column grid lines. It’s a single “unit” of the
 					grid. Here’s the grid cell between row grid lines 1 and 2, and column grid lines 2 and 3.</p>
-				<img src="images/new/terms-grid-cell.svg" alt="grid-cell">
+				<img src="images/terms-grid-cell.svg" alt="grid-cell">
 				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
 								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
 				</p>
@@ -790,7 +791,7 @@
 						grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end]; <br>
 						grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
 					  }</code></p>
-				<img class="bgc-pale" src="images/new/template-column-rows-02.svg" alt="grid-template-columns-rows">
+				<img class="bgc-pale" src="images/template-column-rows-02.svg" alt="grid-template-columns-rows">
 				<p>Note that a line can have more than one name. <br>
 					<code>.container { <br>
 						grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
@@ -859,7 +860,9 @@
 					have multiple names, such as the far left line in the above example, which will have three names:
 					header-start, main-start, and footer-start.
 				</p>
-				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
 			</article>
 
 
@@ -907,7 +910,9 @@
 				<p>sets both the align-items and justify-items properties in a single declaration. <br><code>.center { <br>
 							display: grid; <br>
 							place-items: center;} <br></code></p>
-				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
 			</article>
 
 
@@ -918,11 +923,11 @@
 				<p>This property aligns the grid along the inline (row) axis. <code>.container { <br>
 					justify-content: start | end | center | stretch | space-around | space-between | space-evenly;} <br></code>
 				</p>
-				<p><img src="images/new/justify-content-start.svg" alt="justify-content-start"></p>
+				<p><img class="bgc-pale" src="images/justify-content-start.svg" alt="justify-content-start"></p>
 				<h3>align-content</h3>
 				<p>This property aligns the grid along the block (column) axis. <code>.container { <br>
 					align-content: start | end | center | stretch | space-around | space-between | space-evenly;} <br></code></p>
-				<p><img src="images/new/align-content-start.svg" alt="align-content-start"></p>
+				<p><img class="bgc-pale" src="images/align-content-start.svg" alt="align-content-start"></p>
 				<h3>place-content</h3>
 				<p>place-content sets both the <mark>align-content and justify-content</mark> properties in a single
 					declaration.
@@ -935,8 +940,10 @@
 					Implicit tracks get created when there are <mark>more grid items than cells in the grid or when a
 						grid item is placed outside of the explicit grid.</mark> <code>.container { <br>
 							grid-auto-columns: 60px;} <br></code></p>
-				<p><img src="images/new/grid-auto-columns-rows-03.svg" alt="grid-auto-columns-rows"></p>
-				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+				<p><img class="bgc-pale" src="images/grid-auto-columns-rows-03.svg" alt="grid-auto-columns-rows"></p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
 			</article>
 
 
@@ -964,9 +971,10 @@
 				</p>
 				<h3>grid</h3>
 				<p>A <mark>shorthand</mark> for setting all of the following properties in a single declaration: <br>
-					grid-template-rows <br> grid-template-columns <br> grid-template-areas <br> grid-auto-rows <br> grid-auto-columns <br>
+					grid-template-rows <br> grid-template-columns <br> grid-template-areas <br> grid-auto-rows <br>
+					grid-auto-columns <br>
 					and grid-auto-flow </p>
-					<p>The following two code blocks are equivalent: <br>
+				<p>The following two code blocks are equivalent: <br>
 					<code>.container { <br>
 						grid: 100px 300px / 3fr 1fr;} <br>
 					  
@@ -974,14 +982,14 @@
 						grid-template-rows: 100px 300px; <br>
 						grid-template-columns: 3fr 1fr;} <br></code>
 					Equivalent:
-				<code>.container {<br>
+					<code>.container {<br>
 					grid: auto-flow / 200px 1fr;} <br>
 				  
 				  .container {<br>
 					grid-auto-flow: row; <br>
 					grid-template-columns: 200px 1fr;} <br></code>
-				Equivalent: <br>
-			<code>.container { <br>
+					Equivalent: <br>
+					<code>.container { <br>
 				grid: [row1-start] "header header header" 1fr [row1-end] <br>
 					  [row2-start] "footer footer footer" 25px [row2-end] <br>
 					  / auto 50px auto;} <br> <br>
@@ -992,26 +1000,385 @@
 						grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end]; <br>
 						grid-template-columns: auto 50px auto;} <br>
 					
-					</code></p>
+					</code>
+				</p>
 
-				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
 			</article>
 
 			<article class="container-notes">
 				<h2>Grid CSS - Properties VI</h2>
 				<h2><mark>Items</mark></h2>
-				<p><mark>float, display: inline-block, display: table-cell, vertical-align and column-* properties have no effect on a grid item.</mark></p>
+				<p><mark>float, display: inline-block, display: table-cell, vertical-align and column-* properties have
+						no effect on a grid item.</mark></p>
 				<h3>grid-column-start <br>
 					grid-column-end <br>
 					grid-row-start <br>
 					grid-row-end</h3>
-					<p>Determines a grid item’s location within the grid by referring to specific grid lines.</p>
+				<p>Determines a grid item’s location within the grid by referring to specific grid lines.</p>
+				<p> <mark>line</mark> – can be a number to refer to a numbered grid line, or a name to refer to a named
+					grid line <br>
+					<mark>span number</mark> – the item will span across the provided number of grid tracks <br>
+					<mark>span name</mark> – the item will span across until it hits the next line with the provided
+					name <br>
+					<mark>auto</mark> – indicates auto-placement, an automatic span, or a default span of one. <br>
+					Example: <br>
+					<code>.item-a { <br>
+					grid-column-start: 2; <br>
+					grid-column-end: five; <br> 
+					grid-row-start: row1-start;<br>
+					grid-row-end: 3;} <br></code>
+				</p>
+				<p><img class="bgc-pale" src="images/grid-column-row-start-end-01.svg" alt="grid-column-start"></p>
+				<p>If no grid-column-end/grid-row-end is declared, the item will span 1 track by default. <br>
+
+					<mark>Items can overlap each other. You can use z-index to control their stacking order.</mark>
+				</p>
+
+				<h3>grid-column <br>
+					grid-row</h3>
+				<p><mark>Shorthand</mark> for grid-column-start + grid-column-end, and grid-row-start + grid-row-end,
+					respectively. <br>
+					<code>.item-c {<br>
+					grid-column: 3 / span 2; <br>
+					grid-row: third-line / 4;} <br></code>If no end line value is declared, the item will span 1 track by default.
+				</p>
+				<h3>grid-area</h3>
+				<p>Gives an item a <mark>name</mark> so that it can be referenced by a template created with the
+					grid-template-areas property. Alternatively, this property can be used as an even shorter
+					<mark>shorthand
+						for grid-row-start + grid-column-start + grid-row-end + grid-column-end.</mark> <br>
+					<code>.item-d { <br>
+						grid-area: header;} <br> <br>
+						.item-d { <br>
+							grid-area: 1 / col4-start / last-line / 6;} <br></code>
+				</p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties VII</h2>
+				<h2><mark>Items</mark></h2>
+				<h3>justify-self</h3>
+				<p>Aligns a grid item inside a cell along the inline (row) axis. <br>
+					This value applies to a grid item inside a single cell. <br><code>.item { <br>
+						justify-self: start | end | center | stretch;} <br></code></p>
+				<h3>align-self</h3>
+				<p>Aligns a grid item inside a cell along the block (column) axis. <br>
+					This value applies to the content inside a single grid item. <br><code>.item { <br>
+								justify-self: start | end | center | stretch;} <br></code></p>
+				<h3>place-self</h3>
+				<p>place-self sets both the align-self and justify-self properties in a single declaration. <br>
+					<code>.item-a { <br>
+									place-self: center stretch;} <br></code>
+				</p>
+				<h3><mark>Special Units & Functions</mark></h3>
+				<h3>fr units</h3>
+				<p>They essentially mean “portion of the remaining space”. <br>
+					Work different from % values. <br>
+					Are much more friendly in combination with other units. <br>
+					Example: <br>
+					<code>grid-template-columns: 50px min-content 1fr;</code> <br>
+					<code>grid-template-columns: 1fr 3fr;</code>
+				</p>
+				<h3>Sizing Keywords</h3>
+				<p><mark>min-content:</mark> the minimum size of the content. Imagine a line of text like “The very long
+					hotdog.”, the min-content is likely the width of the world “The”. <br>
+					<mark>max-content:</mark> the maximum size of the content. Imagine the sentence above, the
+					max-content is the length of the whole sentence. <br>
+					<mark>auto:</mark> this keyword is a lot like fr units, except that they “lose” the fight in sizing
+					against fr units when allocating the remaining space. <br>
+					<mark>fit-content:</mark> use the space available, but never less than min-content and never more
+					than max-content. <br>
+					<mark>fractional units:</mark> see above
+				</p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>Grid CSS - Properties VIII</h2>
+				<h2><mark>Items</mark></h2>
+				<h3>Sizing Functions</h3>
+				<p>The <mark>minmax()</mark> function sets a minimum and maximum value for what
+					the length is able to be. <br> This is useful for in combination with relative units. <br> Like you
+					may want a
+					column to be only able to shrink so far. <code>grid-template-columns: minmax(100px, 1fr) 3fr;</code>
+				</p>
+				<h3>repeat() Function and Keywords</h3>
+				<p><code>grid-template-columns: <br>
+						1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; <br>
+					  
+					  /* easier: */ <br>
+					  grid-template-columns: <br>
+						repeat(8, 1fr); <br>
+					  
+					  /* especially when: */ <br>
+					  grid-template-columns: <br>
+						repeat(8, minmax(10px, 1fr)); <br></code>
+					<mark>auto-fill:</mark> Fit as many possible columns as possible on a row, even if they are empty.
+					<br>
+					<mark>auto-fit:</mark> Fit whatever columns there are into the space. Prefer expanding columns to
+					fill space rather than empty columns. <br>
+					This bears <mark>the most famous snippet</mark> in all of CSS Grid and one of the all-time great CSS
+					tricks: <br>
+					<code>grid-template-columns: <br>
+						repeat(auto-fit, minmax(250px, 1fr)); <br></code>
+				</p>
+				<h3>Masonry</h3>
+				<p>An experimental feature of CSS grid is masonry layout. <br>
+					The spec has an official way now, and this is behind a flag in Firefox: <br>
+					<code>.container { <br>
+							display: grid; <br>
+							grid-template-columns: repeat(4, 1fr); <br>
+							grid-template-rows: masonry;} <br></code>
+					<a href="https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/"
+						target="_blank" rel="noopener noreferrer">Lots of approaches to CSS Mansory layout.</a>
+				</p>
+				<h3>Subgrid</h3>
+				<p>Subgrid is an extremely useful feature of grids that allows grid items to have a grid of their own
+					that inherits grid lines from the parent grid. <br><code>.parent-grid { <br>
+						display: grid; <br>
+						grid-template-columns: repeat(9, 1fr);} <br>
+					  .grid-item { <br>
+						grid-column: 2 / 7; <br>
+					  
+						display: grid; <br>
+						grid-template-columns: subgrid;} <br>
+					  .child-of-grid-item { <br>
+						/* gets to participate on parent grid! */ <br>
+						grid-column: 3 / 6;} <br></code>
+				</p>
+				<h3>display: contents</h3>
+				<p>Similar to subgrid. Use it on li inside an ul.</p>
+				<p><small><cite><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank"
+								rel="noopener noreferrer">https://css-tricks.com/snippets/css/complete-guide-grid/</a></cite></small>
+				</p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>CSS Media Queries I</h2>
+				<p>Media queries can <mark>modify the appearance (and even behavior)</mark> or a website or app based on
+					a <mark>matched
+						set of conditions</mark> about the user’s device, browser or system settings. <br>
+					Can be used on <mark>HTML, CSS and JS.</mark></p>
+				<h3>HTML</h3>
+				<p><code>
+					&lt;link rel="stylesheet" href="extra-large.css" media="(min-width: 120em)" /> <br>
+					&lt;link rel="stylesheet" href="print.css" media="print" /> <br> </code><code>&lt;style media="all and (max-width: 500px)">
+						p {
+						  background-color: yellow;
+						  color: blue;
+						}
+					  &lt;/style></code></p>
+				<h3>CSS</h3>
+				<p><code>@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { <br>
+						.card { <br>
+						  background: #bada55;}} <br>
+					  </code></p>
+				<h3>JS</h3>
+				<p><code>const mediaQuery = window.matchMedia( '( min-width: 768px )' ) <br> if ( mediaQuery.matches ) {
+						console.log('Media Query Matched!')} <br> </code></p>
+				<h3>Anatomy of Media Query</h3>
+				<p><img src="images/media-query-anatomy.jpg" alt="media-query-anatomy" width="100%"></p>
+				<p> the @media rule itself, is one of many CSS at-rules.</p>
+				<h3>Media Types</h3>
+				<p><mark>all:</mark> Matches all devices <br>
+					<mark>print:</mark> Matches documents that are viewed in a print preview or any media that breaks
+					the content up into pages intended to print. <br>
+					<mark>screen:</mark> Matches devices with a screen <br>
+					<mark>speech:</mark> Matches devices that read the content audibly, such as a screenreader. This
+					replaces the now deprecated aural type since Media Queries Level 4. <br>
+				</p>
+				<h3>Media Features</h3>
+				<p><mark>width</mark> Defines the widths of the viewport. This can be a specific number (e.g. 400px) or
+					a range (using min-width and max-width). <br>
+					<mark>height</mark> Defines the height of the viewport. This can be a specific number (e.g. 400px)
+					or a range (using min-height and max-height). <br>
+					<mark>aspect-ratio</mark> Defines the width-to-height aspect ratio of the viewport. <br>
+					<mark>orientation</mark> The way the screen is oriented, such as tall (portrait) or wide (landscape)
+					based on how the device is rotated. <br>
+					<mark>overflow-block</mark> Checks how the device treats content that overflows the viewport in the
+					block direction, which can be scroll (allows scrolling), optional-paged (allows scrolling and manual
+					page breaks), paged (broken up into pages), and none (not displayed). <br>
+					<mark>overflow-inline</mark> Checks if content that overflows the viewport along the inline axis be
+					scrolled, which is either none (no scrolling) or scroll (allows scrolling).
+				</p>
 				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
 			</article>
 
 			<article class="container-notes">
-				<h2></h2>
-				<p></p>
+				<h2>Do you really need media queries? - CSS</h2>
+				<p>Media queries are a powerful tool in your CSS toolbox with exciting hidden gems. But if you
+					accomodate your design to every possible situation you’ll end up with a codebase that’s too complex
+					to maintain and, as we all know, CSS is like a bear cub: cute and inoffensive but when it grows it
+					will eat you alive. <br> That’s why I recommend following Ranald Mace’s concept of Universal Design
+					which is “the design of
+					products to be usable by all people, to the greatest extent possible, without the need for
+					adaptation or specialized design.” <br> In “Accessibility for Everyone” Laura Kalbag explains that
+					the difference between accessible and
+					universal design is subtle but important. An accessible designer would create a large door for
+					people on a wheel chair to enter, while a universal designer would produce an entry that anyone
+					would fit disregarding of their abilities. <br> I know that talking about universal design on the
+					web is hard and almost sound utopian, but think
+					about it, there are around 150 different browsers, around 50 different combinations of user
+					preferences, and as we mentioned before more than 24000 different and unique Android devices alone.
+					This means that there are at least 18 million possible cases in which your content might be
+					displayed. In the words of the fantastic Miriam Suzanne, “CSS out here trying to do graphic design
+					of unknown content on an infinite and unknown canvas, across operating systems, interfaces, &
+					languages. There’s no possible way for any of us to know what we’re doing.” <br> That’s why assuming
+					is really dangerous, so when you design, develop and think about your products
+					leave assumptions behind and use media queries to make sure that your content is displayed correctly
+					in any contact and before any user.
+
+				</p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+			<article class="container-notes">
+				<h2>CSS Media Query II</h2>
+				<h3>min- and max-</h3>
+				<p><code>@media (min-width: 30em) and (max-width: 80em) { <br>
+					body { <br>
+					  background-color: purple;} <br></code></p>
+				<h3>Nesting and complex decision making</h3>
+				<p><code>@media (min-width: 20em), not all and (min-height: 40em) {  <br>
+						@media not all and (pointer: none) { ... } <br>
+						@media screen and ( (min-width: 50em) and (orientation: landscape) ), print and ( not (color) ) { ... }} <br></code>
+				</p>
+				<h3>Accessibility</h3>
+				<p><code>@media screen and (prefers-reduced-motion: reduce) {  <br>
+							* {
+							  /* Very short durations means JavaScript that relies on events still works */ <br>
+							  animation-duration: 0.001ms !important; <br>
+							  animation-iteration-count: 1 !important; <br>
+							  transition-duration: 0.001ms !important;}} <br></code></p>
+				<p><code>@media (prefers-contrast: high) { <br>
+								.button { <br>
+								  background-color: #0a0db7;} <br></code></p>
+				<p><code>@media (inverted-colors) { <br>
+									img, video {  <br>
+									  filter: invert(100%);}} <br></code></p>
+				<p><code>@media screen and (prefers-color-scheme: light) { <br>
+										body { <br>
+										  --bg-color: black; <br>
+										  --text-color:white;} <br></code></p>
+				<h3>Mobile first - responsive design</h3>
+				<p><mark>responsive design:</mark> a process by which a design responds to the size of the viewport
+					using a combination of a fluid grid, flexible images, and responsive typesetting. <br>
+					<mark>mobile-first</mark>, designers and developers start with the small-screen experience first. It
+					usually uses of min-width. <br>
+					Brad Frost preached the virtues of <mark>content — not devices — determine breakpoints. <br></mark>
+					It’s possible to avoid using width at all. Modern CSS allow us to create flexible layouts with CSS
+					grid and flex. <br>
+				</p>
+				<h3>7 habits of highly effective media queries</h3>
+				<p>Let content determine breakpoints <br>
+					Treat layout as an enhancement <br>
+					Use major and minor breakpoints <br>
+					Use relative units <br>
+					Go beyond width <br>
+					Use media queries for conditional loading <br>
+					Don’t go overboard <br>
+					<cite><mark>Start with the small screen first, then expand until it looks like shit. Time for a
+							breakpoint! –Stephen Hay</mark></cite> <br>
+					<mark>Avoid pixel-based media queries. Use ems instead.</mark>
+				</p>
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+			<article class="container-notes two-cols">
+				<h2>Grid CSS - Properties IX</h2>
+				<p><video src="videos/01-place-items-center.mp4" type="video/mp4" width="100%" autoplay loop></video>
+				</p>
+				<p><video src="videos/02-deconstructed-pancake-1.mp4" type="video/mp4" width="100%" autoplay
+						loop></video></p>
+				<p><video src="videos/02-deconstructed-pancake-2.mp4" type="video/mp4" width="100%" autoplay
+						loop></video></p>
+				<p><video src="videos/03-sidebar-says.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/04-pancake-stack.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><small><cite><a href="https://web.dev/one-line-layouts/" target="_blank"
+								rel="noopener noreferrer">https://web.dev/one-line-layouts/</a></cite></small></p>
+			</article>
+
+			<article class="container-notes">
+				<h2>CSS Media Query III</h2>
+				<h3>go beyond width</h3>
+				<p><mark>Media Features:</mark> <br> color, color index, aspect ratio, device aspect ratio, width,
+					device width, height, device height, orientation, monochrome, resolution, scan, pixel-density and
+					more. <br>
+				</p>
+				<h3>use media queries for conditional loading</h3>
+				<p>It allows us to prioritize core content and performance while still providing a robust,
+					fully-featured experience to environments that can handle it. <br>
+					MatchMedia allows Javascript to capitalize on all the media query goodness. <br>
+					<code>if (window.matchMedia("(	min-width: 40em)").matches) {<br>
+			/* load secondary content */ }</code>
+				</p>
+				<h3>don’t go overboard</h3>
+				<p>introducing a lot of complexity into your designs is going to come back to bite you. <br>
+					Do as little as possible.</p>
+				<h3>Orientation Media Feature</h3>
+				<p>The orientation media feature tests whether a device is rotated the wide way (landscape) or the tall
+					way (portrait). <br>
+					<mark>Media queries are unable to know exactly which device is being used</mark>
+				</p>
+				<p><img src="images/portrait-landscape-scaled.jpg" alt="portrait-landscape-scaled" width="100%"></p>
+
+				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
+			</article>
+
+			<article class="container-notes two-cols">
+				<h2>Grid CSS - Properties X</h2>
+				<p><video src="videos/05-holy-grail.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/06-12-span-1.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/06-12-span-2.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/07-ram-1.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/07-ram-2.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/08-lineup.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/09-clamping.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><video src="videos/10-aspectratio.mp4" type="video/mp4" width="100%" autoplay loop></video></p>
+				<p><small><cite><a href="https://web.dev/one-line-layouts/" target="_blank"
+								rel="noopener noreferrer">https://web.dev/one-line-layouts/</a></cite></small></p>
+			</article>
+
+
+			<article class="container-notes">
+				<h2>CSS - EM y REM, Unidades flexibles</h2>
+
+				<p>em y rem son unidades flexibles, que dependen del valor establecido de la fuente de nuestro
+					diseño que es interpretado por el navegador en valores de pixeles.</p>
+				<h3>REM</h3>
+				<p>Dependen directamente del tamaño de fuente del elemento &lt;html>. <br> Permiten escalar el proyecto
+					en su totalidad con solo cambiar el tamaño el tamaño raíz de la fuente. <br> No se ve afectado por
+					el font-size de otros elementos. </p>
+				<h3>EM</h3>
+				<p>Depende del último font-size definido dentro del árbol de elementos en el que se encuentra. <br>
+					Aunque aportan flexibilidad a la maquetación, pueden hacer mas complejo tu código, por tal razón
+					deben manejarse con cuidado. <br> <mark>La ventaja de utilizar em es que permite crear componentes
+						totalmente modulares, donde con solo cambiar el valor del elemento padre implicaría cambiar los
+						valores de los elementos hijos.3</mark> </p>
+				<h3>Utilizar EM y REM a la vez?</h3>
+				<p>Hay algunos que opinan que es mejor utilizar solo <mark>em</mark> para diseñar todo de manera modular
+					aunque <mark>los
+						cálculos sean mas complejos.</mark> Otros prefieren la <mark>simplicidad de rem</mark> donde
+					todos los <mark>cálculos dependen
+						del mismo valor de font size</mark> del elemento raiz. <br> Lo mas optimo es conseguir un
+					equilibrio utilizando em y rem lo que ayudaría a simplificar los cálculos y haría nuestro código mas
+					sencillo. <br> la <mark>ventaja de utilizar rem</mark> es la simpleza que nos permite escalar los valores en el
+					proyecto con solo cambiar el valor del font-size en el html de igual manera en los distintos
+					dispositivos cambiando el valor dentro de los media querys. <br> La <mark>ventaja de utilizar em</mark> es de lograr
+					realizar componente modulares que dependen del valor del elemento padre, con lo que debemos tener
+					cuidado y realizar correctamente los cálculos para obtener una visualización correcta en la
+					disposición de los elementos. De esta manera también <mark>es recomendable utilizar em y rem a la vez y
+					conseguir un equilibrio entre ambos.</mark> </p>
 				<p><small><cite><a href="http://" target="_blank" rel="noopener noreferrer"></a></cite></small></p>
 			</article>
 

@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="styles/cv-style.css" />
 		<link rel="stylesheet" href="styles/main.css" />
 		<!-- ScrollReveal -->
-		<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+		<script src="https://unpkg.com/scrollreveal"></script>
 		<!-- meta tags -->
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,14 +30,12 @@
 		<script src="scripts/header.js"></script>
 
 		<main class="main-container-cv">
-			<section class="info-flex">
-				<figure>
-					<img
-						class="foto-perfil-cv"
-						src="images/octavio-frangipani.jpg"
-						alt="foto perfil"
-					/>
-				</figure>
+			<section class="grid300">
+				<img
+					class="foto-perfil-cv"
+					src="images/octavio-frangipani.jpg"
+					alt="foto perfil"
+				/>
 
 				<!-- article   -->
 				<!-- title  -->
@@ -45,32 +43,31 @@
 				<!-- mail  -->
 				<!-- phone num  -->
 				<!-- about me  -->
-				<section>
-					<article class="info-cv">
-						<h2 class="pady1">Junior Full Stack Web Developer</h2>
-						<h1>
-							<em class="fa-brands fa-html5"></em>
-							<em class="fa-brands fa-css3-alt"></em>
-							<em class="fa-brands fa-js"></em>
-							<em class="fab fa-bootstrap"></em>
-							<em class="fa-brands fa-react"></em>
-							<em class="fa-brands fa-node"></em>
-							<em class="fa-brands fa-git-alt"></em>
-							<em class="fa-solid fa-file-excel"></em>
-						</h1>
-						<p>Barcelona City, Spain</p>
-						<p>
-							<a href="mailto:frangipani.octavio@gmail.com"
-								>frangipani.octavio@gmail.com</a
-							>
-						</p>
-						<p><a href="tel:+34722696514">+34 722 69 65 14</a></p>
-						<p>
-							Specialized in MERN Stack - HTML5 · CSS3 · Javascript · React.js ·
-							MongoDB · Node.js · Express.js · REDUX · Next.js
-						</p>
-					</article>
-				</section>
+
+				<article class="info-cv">
+					<h2 class="pady1">Junior Full Stack Web Developer</h2>
+					<h1>
+						<em class="fa-brands fa-html5"></em>
+						<em class="fa-brands fa-css3-alt"></em>
+						<em class="fa-brands fa-js"></em>
+						<em class="fab fa-bootstrap"></em>
+						<em class="fa-brands fa-react"></em>
+						<em class="fa-brands fa-node"></em>
+						<em class="fa-brands fa-git-alt"></em>
+						<em class="fa-solid fa-file-excel"></em>
+					</h1>
+					<p>Barcelona City, Spain</p>
+					<p>
+						<a href="mailto:frangipani.octavio@gmail.com"
+							>frangipani.octavio@gmail.com</a
+						>
+					</p>
+					<p><a href="tel:+34722696514">+34 722 69 65 14</a></p>
+					<p>
+						Specialized in MERN Stack - HTML5 · CSS3 · Javascript · React.js ·
+						MongoDB · Node.js · Express.js · REDUX · Next.js
+					</p>
+				</article>
 			</section>
 
 			<nav>
@@ -95,8 +92,8 @@
 			<!-- date of birth   -->
 			<!-- education level   -->
 			<!-- type of industry   -->
-			<div class="flex">
-				<section id="personal-data" class="width30">
+			<div class="grid300">
+				<section id="personal-data">
 					<h4 class="mary1">
 						Personal Data
 						<a href="#header"
@@ -128,7 +125,7 @@
 				<!-- Language   -->
 				<!-- Level   -->
 
-				<section id="languages" class="width30">
+				<section id="languages">
 					<h4 class="mary1">
 						Languages
 						<a href="#header"
@@ -147,7 +144,7 @@
 				<!-- title   -->
 				<!-- link   -->
 
-				<section id="social-media" class="width30">
+				<section id="social-media">
 					<h4 class="mary1">
 						Social Media
 						<a href="#header"
@@ -184,7 +181,7 @@
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<div class="flex">
+				<div class="grid300">
 					<article class="article-cv">
 						<h5>
 							Content Manager at
@@ -194,8 +191,8 @@
 						<p>January 2015 - May 2019</p>
 						<p>
 							Audiovisual content production/maintenance for multinational latin
-							retail company. Photography and video productions for
-							internal/external communication. In charge of 27 products
+							retail company. <br> Photography and video productions for
+							internal/external communication. <br> In charge of 27 products
 							categories, 45.000 products, 2 teams, total of 12 people.
 						</p>
 					</article>
@@ -227,7 +224,7 @@
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<div class="flex">
+				<div class="grid300">
 					<article class="article-cv">
 						<h5>
 							Frontend Bootcamp ( React / Redux / TypeScript / UnitTesting ) at
@@ -249,9 +246,9 @@
 						>
 						<br />
 						<small
-							>HTML5 · CSS3 · FlexBox · Bootstrap · SASS · Javascript ·
-							TypeScript · DevTools · React · Testing · Redux · SoftSkills ·
-							Interviews simulations · Team office project simulation</small
+							>HTML5 </br> CSS3 </br> Responsive Design </br> Bootstrap </br> SASS </br> Javascript
+							</br> TypeScript </br> DevTools </br> React </br> Testing </br> Redux </br> SoftSkills </br>
+							Interviews simulations </br> Team office project simulation</small
 						>
 					</article>
 					<article class="article-cv">
@@ -271,14 +268,18 @@
 						>
 						<br />
 						<small
-							>React with Functional Components & Hooks React router
-							React-Bootstrap UI library How to structure components Component
-							level state & props Managing global state with Redux (Actions &
-							Reducers) Using Redux state in components (useDispatch &
-							useSelector) Creating an extensive back end with Express Working
-							with a MongoDB database and the Mongoose ODM JWT authentication
-							(JSON web tokens) Creating custom authentication middleware Custom
-							error handler Integrating the PayPal API Environment variables
+							>React with Functional Components & Hooks <br />
+							React router <br />
+							React-Bootstrap UI library <br />
+							Component level state & props <br />
+							Managing global state with Redux <br />
+							Express Backend <br />
+							MongoDB database and the Mongoose ODM <br />
+							JWT authentication <br />
+							Authentication middleware <br />
+							Custom error handler <br />
+							Integrating the PayPal API <br />
+							Environment variables <br />
 							Project deployment</small
 						>
 					</article>
@@ -301,12 +302,10 @@
 						<br />
 
 						<small
-							>Complete User Authentication (Login / Signup) Image and File
-							Uploads Server-side Rendering Pagination Payment Processing
-							Complete Node API w/ Full CRUD Functionality Authorization and
-							Managing Multiple User Roles (guest, user, admin) Responsive +
-							Mobile-First Design Attractive + Responsive App Interface Complete
-							App Deployment with Zeit Now</small
+							>Complete User Authentication (Login / Signup) <br> Image and File
+							Uploads <br> Server-side Rendering <br> Pagination <br> Payment Processing <br>
+							Complete Node API w/ Full CRUD Functionality <br> Authorization and
+							Managing Multiple User Roles (guest, user, admin) <br> Mobile-First Design Attractive, Responsive App Interface <br>App Deployment with Zeit Now</small
 						>
 					</article>
 					<article class="article-cv">
@@ -322,10 +321,10 @@
 						<p>Remote</p>
 						<p>October 2020 - February 2021</p>
 						<small>
-							HTML 5 · CSS 3 · Bootstrap 4 · Javascript ES6 · DOM Manipulation ·
-							jQuery · Bash Command Line Git, GitHub and Version Control ·
-							Node.js · NPM · Express.js · EJS · REST APIs · SQL · MongoDB ·
-							Mongoose · Authentication · Firebase · React.js · React Hooks ·
+							HTML 5 </br> CSS 3 </br> Bootstrap 4 </br> Javascript ES6 </br> DOM Manipulation </br>
+							jQuery </br> Bash Command Line Git <br> GitHub and Version Control </br>
+							Node.js </br> NPM </br> Express.js </br> EJS </br> REST APIs </br> SQL </br> MongoDB </br>
+							Mongoose </br> Authentication </br> Firebase </br> React.js </br> React Hooks </br>
 							Deployment with GitHub Pages, Heroku and MongoDB Atlas
 						</small>
 					</article>
@@ -341,8 +340,8 @@
 						<p>Remote</p>
 						<p>August 2020</p>
 						<small
-							>How to define the presentation of a web page and it's elements.
-							How to layout a web page. SEO, Semantic HTML, Usability and
+							>How to define the presentation of a web page and it's elements. <br>
+							How to layout a web page. <br> SEO <br> Semantic HTML <br> Usability and
 							Accessibility.
 						</small>
 					</article>
@@ -359,7 +358,7 @@
 						<p>Remote</p>
 						<p>July 2020</p>
 						<small
-							>History of the web. How a web site works. How to structure, write
+							>History of the web. <br> How a web site works. <br> How to structure, write
 							and publish a web site.
 						</small>
 					</article>
@@ -458,9 +457,11 @@
 						>
 					</p>
 					<iframe
+						class="iframe"
 						src="https://proshop-app-177.herokuapp.com/"
-						frameborder="0"
-						height="300em"
+						title="proshop"
+						width="100%"
+						height="400px"
 					></iframe>
 				</article>
 			</section>
@@ -479,69 +480,69 @@
 						><em style="font-size: 12px" class="fa-solid fa-angle-up"></em
 					></a>
 				</h4>
-				<div class="flex">
-					<article class="article-cv width">
+				<div class="grid120">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-html5"></em><strong> HTML5</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-css3-alt"></em><strong> CSS3</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-js"></em><strong> Javascript</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fab fa-bootstrap"></em><strong> Bootstrap</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-react"></em><strong> React.js</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>MongoDB</strong> Intermediate</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>Express.js</strong> Intermediate</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-node"></em><strong> Node.js</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>REDUX</strong> Intermediate</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>Next.js</strong> Intermediate</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-brands fa-git-alt"></em><strong> Git</strong>
 							Intermediate
 						</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>Adobe Photoshop</strong> Intermediate</p>
 					</article>
 
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p><strong>Adobe Scene7</strong> Intermediate</p>
 					</article>
-					<article class="article-cv width">
+					<article class="article-cv">
 						<p>
 							<em class="fa-solid fa-file-excel"></em
 							><strong> Microsoft Excel</strong> Advance

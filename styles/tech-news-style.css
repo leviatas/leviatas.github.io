@@ -272,7 +272,7 @@ a {
 
 /* Media queries */
 
-@media (max-width: 1180px) {
+@media (max-width: 73.75em) {
 	#menu {
 		visibility: hidden;
 		position: fixed;
@@ -296,7 +296,7 @@ a {
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25em) {
 	.news-cards {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -337,14 +337,14 @@ a {
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.62em) {
 	.nav-main {
 		display: flex;
 		flex-flow: column;
 	}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.37em) {
 	#menu {
 		position: fixed;
 		z-index: 10;

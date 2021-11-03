@@ -4,16 +4,14 @@
 }
 
 .container-flex-index {
-	display: flex;
-	flex-flow: row wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 	color: var(--header-title-color);
-	justify-content: space-around;
 	transition: 0.3s;
 }
 
 .container {
 	border-radius: 1em;
-	flex: 1 1 25%;
 	text-align: center;
 	margin: 1em;
 	cursor: pointer;

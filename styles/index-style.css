@@ -15,7 +15,6 @@
 	text-align: center;
 	margin: 1em;
 	cursor: pointer;
-	/* border: solid 0.1px var(--header-element-color); */
 	background-color: var(--header-darker-color);
 	transition: 0.3s;
 }
@@ -49,4 +48,13 @@
 
 .container h1:hover {
 	transition: 0.3s;
+}
+
+.display-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.display-grid .container h1 {
+	padding: 1.56em 0;
 }

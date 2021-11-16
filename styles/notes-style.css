@@ -13,6 +13,7 @@ code {
 .container-grid-notes {
 	color: var(--header-text-color);
 	display: grid;
+	grid-auto-flow: dense;
 	grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
 }
 
@@ -40,6 +41,10 @@ code {
 	transition: 0.3s;
 }
 
+.container-notes h3 {
+	color: deeppink;
+}
+
 .container-notes p {
 	letter-spacing: 0.06em;
 }
@@ -55,5 +60,13 @@ code {
 }
 
 .two-cols {
-	grid-column: 1 / span 2;
+	grid-column: span 2;
+}
+
+.three-cols {
+	grid-column: span 3;
+}
+
+.four-cols {
+	grid-column: span 4;
 }

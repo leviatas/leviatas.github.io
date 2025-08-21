@@ -11,6 +11,11 @@
       textarea {
         width: 100%;
         height: 150px;
+        box-sizing: border-box;
+      }
+      .error {
+        color: red;
+        margin-top: 5px;
       }
       .container {
         margin-top: 20px;
@@ -18,22 +23,34 @@
       .pair {
         margin-bottom: 10px;
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
+        align-items: center;
       }
-      input {
-        width: 100%;
+      .pair input {
+        width: calc(50% - 5px); /* cada input ocupa 50% menos el gap */
         padding: 5px;
+        box-sizing: border-box;
       }
-      button {
+      .buttons {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      button.copy-btn {
         padding: 5px 10px;
+        cursor: pointer;
+      }
+      .copied {
+        color: green;
+        margin-left: 5px;
       }
     </style>
   </head>
   <body>
     <h2>JSON a Inputs Clave/Valor</h2>
     <textarea id="jsonInput" placeholder="Pega tu JSON aquí"></textarea>
-    <br />
-    <button onclick="generateInputs()">Generar Inputs</button>
+    <div id="jsonError" class="error"></div>
 
     <div class="container" id="inputsContainer"></div>
 
@@ -56,16 +73,27 @@
         return result;
       }
 
+      function copyToClipboard(text, span) {
+        navigator.clipboard.writeText(text).then(() => {
+          span.textContent = "Copiado!";
+          setTimeout(() => (span.textContent = ""), 1000);
+        });
+      }
+
       function generateInputs() {
         const container = document.getElementById("inputsContainer");
-        container.innerHTML = ""; // limpiar
+        container.innerHTML = "";
+        const errorDiv = document.getElementById("jsonError");
+        errorDiv.textContent = "";
 
-        let jsonText = document.getElementById("jsonInput").value;
+        const jsonText = document.getElementById("jsonInput").value;
+        if (!jsonText.trim()) return;
+
         let parsed;
         try {
           parsed = JSON.parse(jsonText);
         } catch (e) {
-          alert("JSON inválido");
+          errorDiv.textContent = "JSON inválido";
           return;
         }
 
@@ -73,17 +101,47 @@
         pairs.forEach((pair) => {
           const div = document.createElement("div");
           div.className = "pair";
+
           const keyInput = document.createElement("input");
           keyInput.type = "text";
           keyInput.value = pair.key;
+
           const valueInput = document.createElement("input");
           valueInput.type = "text";
           valueInput.value = pair.value;
+
+          const buttonsDiv = document.createElement("div");
+          buttonsDiv.className = "buttons";
+
+          const copyKeyBtn = document.createElement("button");
+          copyKeyBtn.textContent = "Copy Key";
+          copyKeyBtn.className = "copy-btn";
+
+          const copyValueBtn = document.createElement("button");
+          copyValueBtn.textContent = "Copy Value";
+          copyValueBtn.className = "copy-btn";
+
+          const copiedSpan = document.createElement("span");
+          copiedSpan.className = "copied";
+
+          copyKeyBtn.onclick = () => copyToClipboard(pair.key, copiedSpan);
+          copyValueBtn.onclick = () => copyToClipboard(pair.value, copiedSpan);
+
+          buttonsDiv.appendChild(copyKeyBtn);
+          buttonsDiv.appendChild(copyValueBtn);
+          buttonsDiv.appendChild(copiedSpan);
+
           div.appendChild(keyInput);
           div.appendChild(valueInput);
+          div.appendChild(buttonsDiv);
+
           container.appendChild(div);
         });
       }
+
+      document
+        .getElementById("jsonInput")
+        .addEventListener("input", generateInputs);
     </script>
   </body>
 </html>

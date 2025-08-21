@@ -4,27 +4,23 @@ Bienvenido a mi repositorio de GitHub. Aquí encontrarás algunos de mis proyect
 
 ## Página principal
 
-Mi página de GitHub Pages está disponible aquí:  
-🌐 [https://leviatas.github.io](https://leviatas.github.io)
+<a href="https://leviatas.github.io" target="_blank">🌐 Mi página principal ↗</a>
 
 ## Proyectos destacados
 
-- **JSON Flatten & Copy**  
-  Convierte un JSON en inputs clave/valor para copiar y pegar fácilmente.  
-  🔗 [https://leviatas.github.io/jsonflattenandcopy/](https://leviatas.github.io/jsonflattenandcopy/)
+- <a href="https://leviatas.github.io/jsonflattenandcopy/" target="_blank">JSON Flatten & Copy ↗</a>  
+  Convierte un JSON en inputs clave/valor para copiar y pegar fácilmente.
 
-- **Otro Proyecto**  
-  Breve descripción de otro proyecto.  
-  🔗 [Enlace al proyecto](#)
+- <a href="#" target="_blank">Otro Proyecto ↗</a>  
+  Breve descripción de otro proyecto.
 
-- **Proyecto de ejemplo**  
-  Algo que quieras mostrar.  
-  🔗 [Enlace al proyecto](#)
+- <a href="#" target="_blank">Proyecto de ejemplo ↗</a>  
+  Algo que quieras mostrar.
 
 ## Contacto
 
-- GitHub: [https://github.com/leviatas](https://github.com/leviatas)
-- Email: levi@example.com
+- <a href="https://github.com/leviatas" target="_blank">GitHub ↗</a>
+- <a href="mailto:levi@example.com">Email ↗</a>
 
 ---
 

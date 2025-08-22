@@ -7,33 +7,39 @@
     body { font-family: Arial, sans-serif; padding: 20px; }
     textarea { width: 100%; height: 150px; margin-bottom: 10px; }
     button { padding: 8px 16px; margin-right: 10px; }
+    #copiedMsg { color: green; display: none; margin-left: 10px; }
 </style>
 </head>
 <body>
 
 <h3>Texto original</h3>
-<textarea id="inputText"></textarea>
+<textarea id="inputText" placeholder="Escribe o pega tu texto aquí..."></textarea>
 
 <h3>Texto procesado</h3>
 <textarea id="outputText" readonly></textarea>
 
-<button id="processBtn">Procesar</button>
 <button id="copyBtn">Copiar</button>
+<span id="copiedMsg">Copiado</span>
 
 <script>
 const regex = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+Z/g;
 
-document.getElementById('processBtn').addEventListener('click', () => {
-    const input = document.getElementById('inputText').value;
-    const output = input.replace(regex, '');
-    document.getElementById('outputText').value = output;
+const inputText = document.getElementById('inputText');
+const outputText = document.getElementById('outputText');
+const copyBtn = document.getElementById('copyBtn');
+const copiedMsg = document.getElementById('copiedMsg');
+
+// Procesar automáticamente al escribir
+inputText.addEventListener('input', () => {
+    outputText.value = inputText.value.replace(regex, '');
 });
 
-document.getElementById('copyBtn').addEventListener('click', () => {
-    const outputTextarea = document.getElementById('outputText');
-    outputTextarea.select();
+// Copiar y mostrar mensaje
+copyBtn.addEventListener('click', () => {
+    outputText.select();
     document.execCommand('copy');
-    alert('Texto copiado al portapapeles');
+    copiedMsg.style.display = 'inline';
+    setTimeout(() => { copiedMsg.style.display = 'none'; }, 2000);
 });
 </script>
 
